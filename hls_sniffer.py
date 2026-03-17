@@ -7,6 +7,7 @@ Supporta pagine con contenuto dinamico (JavaScript, iframe, player video).
 import re
 import sys
 import os
+from typing import Dict, Optional
 from urllib.parse import unquote, urljoin, urlparse
 
 try:
@@ -85,6 +86,13 @@ def print_section(title):
 def _default_referrer(url):
     parsed = urlparse(url)
     return f"{parsed.scheme}://{parsed.netloc}/"
+
+
+def _origin_from_url(url):
+    parsed = urlparse(url)
+    if parsed.scheme and parsed.netloc:
+        return f"{parsed.scheme}://{parsed.netloc}"
+    return None
 
 
 def _build_headers(referrer=None):
@@ -234,16 +242,44 @@ def _should_read_response_body(resp, content_type):
     return any(token in lowered_url for token in ('manifest', 'playlist', 'index', 'master', 'm3u', 'hls'))
 
 
-def sniff_with_playwright(url, referrer=None):
+def _extract_request_metadata(headers: Dict[str, str], default_referer: Optional[str]) -> Dict[str, Optional[str]]:
+    referer = headers.get('referer') or default_referer
+    origin = headers.get('origin') or (_origin_from_url(referer) if referer else None)
+    user_agent = headers.get('user-agent') or USER_AGENT
+    return {
+        'referer': referer,
+        'origin': origin,
+        'user_agent': user_agent,
+    }
+
+
+def _merge_stream_metadata(meta_map: Dict[str, Dict[str, Optional[str]]], stream_url: str, incoming_meta: Dict[str, Optional[str]]):
+    current = meta_map.get(stream_url)
+    if not current:
+        meta_map[stream_url] = incoming_meta
+        return
+
+    for key in ('referer', 'origin', 'user_agent'):
+        if not current.get(key) and incoming_meta.get(key):
+            current[key] = incoming_meta[key]
+
+
+def sniff_with_playwright(url, referrer=None, include_metadata=False):
     """
     Usa Playwright (Chromium headless) per intercettare le richieste di rete
-    mentre la pagina si carica — come fa un'estensione Chrome.
+        mentre la pagina si carica — come fa un'estensione Chrome.
+
+        include_metadata=True ritorna una tupla:
+            (set(stream_url), dict(stream_url -> {referer, origin, user_agent}))
     """
     found = set()
+    stream_metadata = {}
 
     if not PLAYWRIGHT_AVAILABLE:
         print("  ✗ Playwright non installato.")
         print("    Installa con:  pip install playwright && playwright install chromium")
+        if include_metadata:
+            return found, stream_metadata
         return found
 
     # Usa la homepage del dominio come referer se non specificato
@@ -284,6 +320,9 @@ def sniff_with_playwright(url, referrer=None):
             if _is_http_url(req.url) and _looks_like_hls_url(req.url):
                 print(f"  ★ {req.url}")
                 found.add(req.url)
+                if include_metadata:
+                    meta = _extract_request_metadata(req.headers, referrer)
+                    _merge_stream_metadata(stream_metadata, req.url, meta)
 
         def on_response(resp):
             content_type = resp.headers.get('content-type', '').lower()
@@ -294,6 +333,9 @@ def sniff_with_playwright(url, referrer=None):
 
             if _is_http_url(resp.url) and (_looks_like_hls_url(resp.url) or is_hls_type):
                 found.add(resp.url)
+                if include_metadata:
+                    meta = _extract_request_metadata(resp.request.headers, referrer)
+                    _merge_stream_metadata(stream_metadata, resp.url, meta)
                 return
 
             # Alcuni CDN non usano estensione .m3u8 nell'URL: riconosci il manifest dal body.
@@ -303,6 +345,9 @@ def sniff_with_playwright(url, referrer=None):
                     if '#EXTM3U' in body and _is_http_url(resp.url):
                         print(f"  ★ {resp.url}  [manifest detected]")
                         found.add(resp.url)
+                        if include_metadata:
+                            meta = _extract_request_metadata(resp.request.headers, referrer)
+                            _merge_stream_metadata(stream_metadata, resp.url, meta)
                 except Exception:
                     pass
 
@@ -333,6 +378,9 @@ def sniff_with_playwright(url, referrer=None):
 
         ctx.close()
         browser.close()
+
+    if include_metadata:
+        return found, stream_metadata
 
     return found
 
