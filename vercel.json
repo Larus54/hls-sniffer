@@ -1,0 +1,12 @@
+{
+  "functions": {
+    "api/index.py": {
+      "runtime": "python3.12",
+      "maxDuration": 60
+    }
+  },
+  "routes": [
+    { "src": "/health", "dest": "/api/index.py" },
+    { "src": "/sniff", "dest": "/api/index.py" }
+  ]
+}

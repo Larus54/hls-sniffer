@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Ambienti virtuali
+.venv/
+venv/
+env/
+
+# Playwright - binari Chromium (non pushare, troppo grandi)
+/ms-playwright/
+
+# Variabili d'ambiente
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Distribuzione / build
+dist/
+build/
+*.egg-info/

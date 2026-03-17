@@ -1,0 +1,6 @@
+# Dipendenze per deploy Vercel (senza Playwright — Chromium non supportato su serverless)
+# Usare mode="requests" nelle chiamate API
+fastapi>=0.115.0
+uvicorn>=0.30.0
+requests>=2.31.0
+pydantic>=2.7.0
