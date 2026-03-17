@@ -6,6 +6,7 @@ Supporta pagine con contenuto dinamico (JavaScript, iframe, player video).
 
 import re
 import sys
+import os
 from urllib.parse import unquote, urljoin, urlparse
 
 try:
@@ -193,6 +194,46 @@ window.chrome = {runtime: {}};
 """
 
 
+def _get_int_env(name, default):
+    value = os.getenv(name)
+    if not value:
+        return default
+    try:
+        parsed = int(value)
+        return parsed if parsed > 0 else default
+    except ValueError:
+        return default
+
+
+GOTO_TIMEOUT_MS = _get_int_env('SNIFFER_GOTO_TIMEOUT_MS', 15000)
+EXTRA_WAIT_MS = _get_int_env('SNIFFER_EXTRA_WAIT_MS', 4000)
+MAX_BODY_BYTES = _get_int_env('SNIFFER_MAX_BODY_BYTES', 400000)
+
+# Manteniamo solo il traffico utile a generare e trovare il manifest.
+ALLOWED_RESOURCE_TYPES = {'document', 'script', 'xhr', 'fetch', 'websocket'}
+
+
+def _should_read_response_body(resp, content_type):
+    request_type = resp.request.resource_type
+    if request_type not in {'document', 'xhr', 'fetch', 'script'}:
+        return False
+
+    # Evita di caricare body grandi in RAM quando non servono.
+    content_length = resp.headers.get('content-length')
+    if content_length:
+        try:
+            if int(content_length) > MAX_BODY_BYTES:
+                return False
+        except ValueError:
+            pass
+
+    if 'text' in content_type or 'json' in content_type or 'xml' in content_type:
+        return True
+
+    lowered_url = resp.url.lower()
+    return any(token in lowered_url for token in ('manifest', 'playlist', 'index', 'master', 'm3u', 'hls'))
+
+
 def sniff_with_playwright(url, referrer=None):
     """
     Usa Playwright (Chromium headless) per intercettare le richieste di rete
@@ -221,6 +262,24 @@ def sniff_with_playwright(url, referrer=None):
         page = ctx.new_page()
         page.add_init_script(STEALTH_SCRIPT)
 
+        def route_handler(route):
+            req = route.request
+            req_type = req.resource_type
+
+            # Lascia passare solo richieste utili alla scoperta stream.
+            if req_type in ALLOWED_RESOURCE_TYPES:
+                route.continue_()
+                return
+
+            # Per "media" teniamo solo URL sospetti HLS e blocchiamo segmenti pesanti.
+            if req_type == 'media' and _looks_like_hls_url(req.url):
+                route.continue_()
+                return
+
+            route.abort()
+
+        page.route('**/*', route_handler)
+
         def on_request(req):
             if _is_http_url(req.url) and _looks_like_hls_url(req.url):
                 print(f"  ★ {req.url}")
@@ -238,7 +297,7 @@ def sniff_with_playwright(url, referrer=None):
                 return
 
             # Alcuni CDN non usano estensione .m3u8 nell'URL: riconosci il manifest dal body.
-            if 'text' in content_type or 'json' in content_type or not content_type:
+            if _should_read_response_body(resp, content_type):
                 try:
                     body = resp.text()
                     if '#EXTM3U' in body and _is_http_url(resp.url):
@@ -251,9 +310,9 @@ def sniff_with_playwright(url, referrer=None):
         page.on('response', on_response)
 
         try:
-            page.goto(url, wait_until='networkidle', timeout=30000, referer=referrer)
+            page.goto(url, wait_until='domcontentloaded', timeout=GOTO_TIMEOUT_MS, referer=referrer)
         except Exception:
-            pass  # timeout networkidle — continua comunque
+            pass  # timeout goto — continua comunque
 
         # Scansiona anche l'HTML renderizzato
         try:
@@ -264,9 +323,9 @@ def sniff_with_playwright(url, referrer=None):
 
         # Attesa extra per player lenti
         if not found:
-            print("  → Attendo 10s per player lenti...")
+            print(f"  → Attendo {EXTRA_WAIT_MS / 1000:.1f}s per player lenti...")
             try:
-                page.wait_for_timeout(10000)
+                page.wait_for_timeout(EXTRA_WAIT_MS)
                 for u in find_m3u8_in_text(page.content(), url):
                     found.add(u)
             except Exception:
