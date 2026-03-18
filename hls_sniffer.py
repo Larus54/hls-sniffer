@@ -7,6 +7,7 @@ Supporta pagine con contenuto dinamico (JavaScript, iframe, player video).
 import re
 import sys
 import os
+import time
 from typing import Dict, Optional
 from urllib.parse import unquote, urljoin, urlparse
 
@@ -299,7 +300,10 @@ def sniff_with_playwright(url, referrer=None, include_metadata=False):
     with sync_playwright() as p:
         browser = p.chromium.launch(
             headless=True,
-            args=['--disable-blink-features=AutomationControlled'],
+            args=[
+                '--disable-blink-features=AutomationControlled',
+                '--disable-dev-shm-usage',
+            ],
         )
         ctx = _make_context(browser)
         page = ctx.new_page()
@@ -366,7 +370,7 @@ def sniff_with_playwright(url, referrer=None, include_metadata=False):
         page.on('response', on_response)
 
         try:
-            page.goto(url, wait_until='domcontentloaded', timeout=GOTO_TIMEOUT_MS, referer=referrer)
+            page.goto(url, wait_until='networkidle', timeout=GOTO_TIMEOUT_MS, referer=referrer)
         except Exception:
             pass  # timeout goto — continua comunque
 
@@ -398,31 +402,57 @@ def sniff_with_playwright(url, referrer=None, include_metadata=False):
 
 # ─── Funzione principale ───────────────────────────────────────────────────────
 
-def sniff(url, referrer=None):
+def sniff(url, referrer=None, skip_requests=True, include_metadata=False):
+    start_time = time.time()
     print(f"\n  URL: {url}")
     if referrer:
         print(f"  Referer: {referrer}")
 
-    print_section("Scan HTTP (requests)")
-    streams_requests = sniff_with_requests(url, referrer=referrer)
-    if streams_requests:
-        print(f"\n  ✓ requests: trovati {len(streams_requests)} stream(s).")
-    else:
-        print("\n  requests: nessuno stream trovato.")
+    streams_requests = set()
+    metadata_requests = {}
+    
+    if not skip_requests:
+        print_section("Scan HTTP (requests)")
+        streams_requests = sniff_with_requests(url, referrer=referrer)
+        if streams_requests:
+            print(f"\n  ✓ requests: trovati {len(streams_requests)} stream(s).")
+        else:
+            print("\n  requests: nessuno stream trovato.")
 
     print_section("Scan browser (Playwright/Chromium)")
-    streams_browser = sniff_with_playwright(url, referrer=referrer)
+    if include_metadata:
+        streams_browser, metadata_browser = sniff_with_playwright(url, referrer=referrer, include_metadata=True)
+    else:
+        streams_browser = sniff_with_playwright(url, referrer=referrer)
+        metadata_browser = {}
+    
     if streams_browser:
         print(f"\n  ✓ Playwright: trovati {len(streams_browser)} stream(s).")
     else:
         print("\n  Playwright: nessuno stream trovato.")
 
     streams = streams_requests | streams_browser
+    elapsed = time.time() - start_time
     if streams:
         print(f"\n  ✓ Totale unificato: {len(streams)} stream(s).")
     else:
         print("\n  Nessuno stream trovato.")
+    
+    print(f"\n  ⏱ Tempo totale: {elapsed:.2f}s")
 
+    if include_metadata:
+        metadata = {}
+        for stream_url in streams:
+            if stream_url in metadata_browser:
+                metadata[stream_url] = metadata_browser[stream_url]
+            else:
+                metadata[stream_url] = {
+                    'referer': referrer or _default_referrer(url),
+                    'origin': _origin_from_url(referrer or _default_referrer(url)),
+                    'user_agent': USER_AGENT,
+                }
+        return streams, metadata
+    
     return streams
 
 
@@ -450,14 +480,21 @@ def main():
     print("          HLS SNIFFER")
     print("=" * 50)
 
-    streams = sniff(target_url, referrer=referrer)
+    streams, metadata = sniff(target_url, referrer=referrer, include_metadata=True)
 
     print("\n" + "=" * 50)
     if streams:
         print(f"  FLUSSI HLS TROVATI ({len(streams)})")
         print("=" * 50)
         for i, stream_url in enumerate(sorted(streams), 1):
-            print(f"  {i}. {stream_url}")
+            meta = metadata.get(stream_url, {})
+            print(f"\n  {i}. {stream_url}")
+            if meta.get('referer'):
+                print(f"     Referer: {meta['referer']}")
+            if meta.get('origin'):
+                print(f"     Origin:  {meta['origin']}")
+            if meta.get('user_agent'):
+                print(f"     UA:      {meta['user_agent'][:60]}...")
     else:
         print("  NESSUN FLUSSO HLS TROVATO")
         print("=" * 50)
