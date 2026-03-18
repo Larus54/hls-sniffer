@@ -223,7 +223,7 @@ ALLOWED_RESOURCE_TYPES = {'document', 'script', 'xhr', 'fetch', 'websocket'}
 
 def _should_read_response_body(resp, content_type):
     request_type = resp.request.resource_type
-    if request_type not in {'document', 'xhr', 'fetch'}:
+    if request_type not in {'document', 'xhr', 'fetch', 'script'}:
         return False
 
     # Evita di caricare body grandi in RAM quando non servono.
@@ -352,12 +352,7 @@ def sniff_with_playwright(url, referrer=None, include_metadata=False):
                 try:
                     body = resp.text()
                     stripped = body.lstrip('\ufeff\r\n\t ')
-                    is_manifest_body = stripped.startswith('#EXTM3U') and (
-                        '#EXTINF' in body
-                        or '#EXT-X-STREAM-INF' in body
-                        or '#EXT-X-TARGETDURATION' in body
-                        or '#EXT-X-ENDLIST' in body
-                    )
+                    is_manifest_body = stripped.startswith('#EXTM3U') and len(stripped.split('\n')) > 1
                     if is_manifest_body and _is_http_url(resp.url):
                         print(f"  ★ {resp.url}  [manifest detected]")
                         found.add(resp.url)
