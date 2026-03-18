@@ -223,7 +223,7 @@ ALLOWED_RESOURCE_TYPES = {'document', 'script', 'xhr', 'fetch', 'websocket'}
 
 def _should_read_response_body(resp, content_type):
     request_type = resp.request.resource_type
-    if request_type not in {'document', 'xhr', 'fetch', 'script'}:
+    if request_type not in {'document', 'xhr', 'fetch'}:
         return False
 
     # Evita di caricare body grandi in RAM quando non servono.
@@ -234,6 +234,13 @@ def _should_read_response_body(resp, content_type):
                 return False
         except ValueError:
             pass
+
+    # Evita falsi positivi su librerie JavaScript (es. hls.js).
+    if 'javascript' in content_type:
+        return False
+
+    if resp.url.lower().endswith('.js'):
+        return False
 
     if 'text' in content_type or 'json' in content_type or 'xml' in content_type:
         return True
@@ -331,6 +338,8 @@ def sniff_with_playwright(url, referrer=None, include_metadata=False):
                 or 'application/x-mpegurl' in content_type
             )
 
+            is_probably_js = ('javascript' in content_type) or resp.url.lower().endswith('.js')
+
             if _is_http_url(resp.url) and (_looks_like_hls_url(resp.url) or is_hls_type):
                 found.add(resp.url)
                 if include_metadata:
@@ -339,10 +348,17 @@ def sniff_with_playwright(url, referrer=None, include_metadata=False):
                 return
 
             # Alcuni CDN non usano estensione .m3u8 nell'URL: riconosci il manifest dal body.
-            if _should_read_response_body(resp, content_type):
+            if _should_read_response_body(resp, content_type) and not is_probably_js:
                 try:
                     body = resp.text()
-                    if '#EXTM3U' in body and _is_http_url(resp.url):
+                    stripped = body.lstrip('\ufeff\r\n\t ')
+                    is_manifest_body = stripped.startswith('#EXTM3U') and (
+                        '#EXTINF' in body
+                        or '#EXT-X-STREAM-INF' in body
+                        or '#EXT-X-TARGETDURATION' in body
+                        or '#EXT-X-ENDLIST' in body
+                    )
+                    if is_manifest_body and _is_http_url(resp.url):
                         print(f"  ★ {resp.url}  [manifest detected]")
                         found.add(resp.url)
                         if include_metadata:
