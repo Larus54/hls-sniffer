@@ -1,0 +1,132 @@
+{
+  "generated_at": "2026-03-19T00:31:16.374987+00:00",
+  "total_sources": 6,
+  "results": [
+    {
+      "source_url": "https://dlstreams.top/player/stream-877.php",
+      "source_referer": "https://dlstreams.top/",
+      "status": "ok",
+      "duration_seconds": 9.41,
+      "streams_count": 2,
+      "streams": [
+        {
+          "url": "https://planetary.lovecdn.ru/ZonaDAZN/index.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3Mzg4MDUyNw==.0fbb51b7781f85f7130e4518ac82336231861213b3ea6ee739cb191366f1fcb0",
+          "referer": "https://lovetier.bz/",
+          "origin": "https://lovetier.bz",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        },
+        {
+          "url": "https://planetary.lovecdn.ru/ZonaDAZN/tracks-v1a1/mono.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3Mzg4MDUyNw%3D%3D.0fbb51b7781f85f7130e4518ac82336231861213b3ea6ee739cb191366f1fcb0",
+          "referer": "https://lovetier.bz/",
+          "origin": "https://lovetier.bz",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        }
+      ]
+    },
+    {
+      "source_url": "https://dlstreams.top/player/stream-870.php",
+      "source_referer": "https://dlstreams.top/",
+      "status": "ok",
+      "duration_seconds": 7.62,
+      "streams_count": 2,
+      "streams": [
+        {
+          "url": "https://planetary.lovecdn.ru/SkySportCalcioIT/index.m3u8?token=U2t5U3BvcnRDYWxjaW9JVHxub19jaGVja19pcHwxNzczODgwNTM1.f8ea3ba3ee5813136582732e3a633f88669bba3d3e2cbbb6a2d9b20ea05816ae",
+          "referer": "https://lovetier.bz/",
+          "origin": "https://lovetier.bz",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        },
+        {
+          "url": "https://planetary.lovecdn.ru/SkySportCalcioIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRDYWxjaW9JVHxub19jaGVja19pcHwxNzczODgwNTM1.f8ea3ba3ee5813136582732e3a633f88669bba3d3e2cbbb6a2d9b20ea05816ae",
+          "referer": "https://lovetier.bz/",
+          "origin": "https://lovetier.bz",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        }
+      ]
+    },
+    {
+      "source_url": "https://dlstreams.top/player/stream-461.php",
+      "source_referer": "https://dlstreams.top/",
+      "status": "ok",
+      "duration_seconds": 7.63,
+      "streams_count": 2,
+      "streams": [
+        {
+          "url": "https://planetary.lovecdn.ru/SkySportUnoIT/index.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzczODgwNTQz.439dcdcf2d891c505fc4db21974a413e4a901de1cdeb6c0309971250efa78d00",
+          "referer": "https://lovetier.bz/",
+          "origin": "https://lovetier.bz",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        },
+        {
+          "url": "https://planetary.lovecdn.ru/SkySportUnoIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzczODgwNTQz.439dcdcf2d891c505fc4db21974a413e4a901de1cdeb6c0309971250efa78d00",
+          "referer": "https://lovetier.bz/",
+          "origin": "https://lovetier.bz",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        }
+      ]
+    },
+    {
+      "source_url": "https://dlstreams.top/player/stream-576.php",
+      "source_referer": "https://dlstreams.top/",
+      "status": "ok",
+      "duration_seconds": 5.02,
+      "streams_count": 2,
+      "streams": [
+        {
+          "url": "https://planetary.lovecdn.ru/SkySportTennisIT/index.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzczODgwNTUx.0c71fd4c3ae94d8f27fc5d03748498f508f65ae136cd4f2f53dba104a1968df3",
+          "referer": "https://lovetier.bz/",
+          "origin": "https://lovetier.bz",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        },
+        {
+          "url": "https://planetary.lovecdn.ru/SkySportTennisIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzczODgwNTUx.0c71fd4c3ae94d8f27fc5d03748498f508f65ae136cd4f2f53dba104a1968df3",
+          "referer": "https://lovetier.bz/",
+          "origin": "https://lovetier.bz",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        }
+      ]
+    },
+    {
+      "source_url": "https://dlstreams.top/player/stream-575.php",
+      "source_referer": "https://dlstreams.top/",
+      "status": "ok",
+      "duration_seconds": 7.65,
+      "streams_count": 2,
+      "streams": [
+        {
+          "url": "https://planetary.lovecdn.ru/SkySportMotoGPIT/index.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzczODgwNTU2.e2fd6e6f826da22d67712882769d50c430fb6a8bd0f158b3f18aa5263ff94170",
+          "referer": "https://lovetier.bz/",
+          "origin": "https://lovetier.bz",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        },
+        {
+          "url": "https://planetary.lovecdn.ru/SkySportMotoGPIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzczODgwNTU2.e2fd6e6f826da22d67712882769d50c430fb6a8bd0f158b3f18aa5263ff94170",
+          "referer": "https://lovetier.bz/",
+          "origin": "https://lovetier.bz",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        }
+      ]
+    },
+    {
+      "source_url": "https://dlstreams.top/player/stream-577.php",
+      "source_referer": "https://dlstreams.top/",
+      "status": "ok",
+      "duration_seconds": 15.38,
+      "streams_count": 2,
+      "streams": [
+        {
+          "url": "https://planetary.lovecdn.ru/SkySportF1IT/index.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzM4ODA1NjM=.46b3304881c958da19830ce71555c3b97c47dd18b9e5b53912eb2d32b4cd4d00",
+          "referer": "https://lovetier.bz/",
+          "origin": "https://lovetier.bz",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        },
+        {
+          "url": "https://planetary.lovecdn.ru/SkySportF1IT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzM4ODA1NjM%3D.46b3304881c958da19830ce71555c3b97c47dd18b9e5b53912eb2d32b4cd4d00",
+          "referer": "https://lovetier.bz/",
+          "origin": "https://lovetier.bz",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        }
+      ]
+    }
+  ]
+}
