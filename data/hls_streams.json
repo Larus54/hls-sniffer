@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-03-21T20:19:06.606549+01:00",
+  "generated_at": "2026-03-21T20:19:58.546869+01:00",
   "total_sources": 6,
   "results": [
     {
       "source_url": "https://dlstreams.top/player/stream-877.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 6.94,
+      "duration_seconds": 4.26,
       "streams_count": 1,
       "streams": [
         {
-          "url": "https://planetary.lovecdn.ru/ZonaDAZN/index.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3NDEyMTAxNQ==.9da6525b03a3186957ba59f32e837ff23c8c7c493c6bc634f1af67351187aedf",
+          "url": "https://planetary.lovecdn.ru/ZonaDAZN/index.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3NDEyMTA4MA==.f8b1222d138e168b96a3bf0b2a297addfeb3254b8d0e18238448d4a9db21a4de",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
@@ -21,13 +21,19 @@
       "source_url": "https://dlstreams.top/player/stream-870.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 7.78,
-      "streams_count": 1,
+      "duration_seconds": 3.49,
+      "streams_count": 2,
       "streams": [
         {
-          "url": "https://planetary.lovecdn.ru/SkySportCalcioIT/index.m3u8?token=U2t5U3BvcnRDYWxjaW9JVHxub19jaGVja19pcHwxNzc0MTIxMDIz.fc0ff884b5bef552d02fe9e6c1c217aaf3a6cb995ffd32f35cce4fec74b73902",
+          "url": "https://planetary.lovecdn.ru/SkySportCalcioIT/index.m3u8?token=U2t5U3BvcnRDYWxjaW9JVHxub19jaGVja19pcHwxNzc0MTIxMDg0.688f38c4dd711a2097da1c956c1ec4e516daf283828a80373e0c57016f6cb3ec",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        },
+        {
+          "url": "https://xadsmart.com/cdcmkcamhhszgam?axhTQeXP=BQQSAAAAAAAACZUAAjJRb2VCUvN8xaEXFZQ9HC6N9q4gL4SgwLk25VxTeBym2rAH_KBy-PjumyibSj5chbcpEQoBWJDrJnms26aewOdu3Nk6DoIFhdWIizbwa6fyULAs4bkSZVcCTOXNjLiDzYp4S4TR93p7ZoYfsWdNSqOV7FwbOuCy5EFFiYTVv9XdvhIurGOAjwSg4HtGFcwSf9VA20m3PNLJvld41Tz6aJUU7SOJDa-5ELxLlrG1vi8AR0LLixtLvoXS7BHceMCLUY4RiD0mTaiMe420E377kS_ISIJWLwCA9JmIAPPy-lNPoG56loyb9HBgOx1jds5lRc_iWtrFSiWqf-d96-4fsU_DTkz4R_VrzBYQb6CkNkleAm4uKJ5581I0nD5yBYgnhiiWatzqVmYBQhs6Wr5HouJQ72Tq8k4tTAioWMiV65gG50tc-t2y4N2Q4nwRS673LWAINr0DPpkXXWYLY-lEzZGAi4_aTw336up8F6d9BoL666a6jUnNwwfMy6zeaCF85XANcAOQwjqhcvXKYQdbbtBR-qGA_b5jmqnfVsmcKjyIl62ymAhJuuWxXay4D0HZZsjA9pydUXfMTwNufzy7G0Xf5kqQdjTKosaXRyxKhHMsJgP_QVDyDCmlFWPa99ef0_TNx7aKFMm3U8j3UC4tMm0bTDOukWap7oZ6pjjyk5sZOf8kd81GfbZsy6gHAqFjb1utJD3BEw2NP_AMISV7ZbetCH6sqaYgi1d1UMsWPQb5rD840mfzwfwFnBB732S-ztL49lC7dX-buFX4wEnDbYKYQEOuBk9RtiT64RXMsdykBhc2CBNYinU_BhgnJTZhUTO3zdJneNKRNDbZWMnf2pOczshUY2_WtXW7zHGvbxuyarXm6iUMF_vvJHaADhTh4YKSB00n4w3KhURW8FCnYyjLOfL_uHoBIZTPVgsFC11QZtOI2JDzQ1JwMyNqNDLH6x8ATAaluOz1xJYquvt0k0QF3rLZXDZB3VUMDC0NVbNCJsbrmhmCPjNU2q7xQ9T5MmbuQRjflU8bvbovkA6DBkQ2Fm-CkGzRW4NVYX8GLhlmw93BwnIKu8KVYimBbYAJVg4eDc6u-4esG_QKFvANgk3vTsXDv8m3PYhBkCEZOPLSLCwYDU8vDKToXRWkMUBiBFudI1foTimHAD1BSVYAEt6x5OQFyEgK4sdqZH-rysibfV3EYtb5yt4F1Q1WYx5KT6E_2oSnIn8qNdK4s8fDb6SNNR-2UtF-ahEGRLc4pSPoM_kN_1gYqbyL_irXEo-O2DseTkd35J5r4Fuw3_oojCr2VMh4LjuyVqB3fs1-Ddl-GmNYGRMPGcomdiMzhDH7O5dzI9ZJJ6ViRrXOMMdYRY20yzeVTRX-basF_Eli8evW&mCDIhzpg=4&nGicjEHx=5278785&fzUIxQAh=&lbpQInsw=0,0&EXBJShlo=&kWFGvNQz=https%3A%2F%2Fdlstreams.top%2F&hnRtWAQq=1280,720,1,1280,720,0",
+          "referer": "https://dlstreams.top/player/stream-870.php",
+          "origin": "https://dlstreams.top",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
         }
       ]
@@ -36,11 +42,11 @@
       "source_url": "https://dlstreams.top/player/stream-461.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 5.16,
+      "duration_seconds": 3.31,
       "streams_count": 1,
       "streams": [
         {
-          "url": "https://planetary.lovecdn.ru/SkySportUnoIT/index.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzc0MTIxMDI5.65e84c3b26ed92ef47fa78ff142e2b76b3bec93b3bf4320e2e4f88c39c3333c7",
+          "url": "https://planetary.lovecdn.ru/SkySportUnoIT/index.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzc0MTIxMDg3.7dbc39e4306c7a02f6a05087a00d4a1cdd28cb4fa611f785b9178325171a68b6",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
@@ -51,11 +57,11 @@
       "source_url": "https://dlstreams.top/player/stream-576.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 6.12,
+      "duration_seconds": 3.37,
       "streams_count": 1,
       "streams": [
         {
-          "url": "https://planetary.lovecdn.ru/SkySportTennisIT/index.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzc0MTIxMDM1.de1e4d2c0221796e2a6b26c5288633dbf55dd5a1094f451fc7723054c33d2682",
+          "url": "https://planetary.lovecdn.ru/SkySportTennisIT/index.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzc0MTIxMDkx.c761400a6be2631b260d29013d37501f650517a8f7850e4ec37a0e1dc92ad3e0",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
@@ -66,11 +72,11 @@
       "source_url": "https://dlstreams.top/player/stream-575.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 5.02,
+      "duration_seconds": 3.34,
       "streams_count": 1,
       "streams": [
         {
-          "url": "https://planetary.lovecdn.ru/SkySportMotoGPIT/index.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzc0MTIxMDQw.27b186e091e3da2f05457b1462caf2afbb6d77f924cb5e2ac3bf956a8513352f",
+          "url": "https://planetary.lovecdn.ru/SkySportMotoGPIT/index.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzc0MTIxMDk0.68985cf7c71f4a8aabe5cf820c81a62e56fdafec32034c5b02bfe010d5ebcbce",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
@@ -81,11 +87,11 @@
       "source_url": "https://dlstreams.top/player/stream-577.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 5.34,
+      "duration_seconds": 3.31,
       "streams_count": 1,
       "streams": [
         {
-          "url": "https://planetary.lovecdn.ru/SkySportF1IT/index.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzQxMjEwNDU=.7f9d513bfaad38cd8a44f62284b4f451c48302f2522708b9c4da17e1425cbdce",
+          "url": "https://planetary.lovecdn.ru/SkySportF1IT/index.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzQxMjEwOTc=.efd7941b38f384b3fd4a17184292ab63445b96a07cd2340bca16923bbc5409de",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
