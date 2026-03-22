@@ -1,33 +1,52 @@
 {
-  "generated_at": "2026-03-22T22:10:44.845913+01:00",
+  "generated_at": "2026-03-22T22:37:23.478508+01:00",
   "total_sources": 6,
   "results": [
     {
       "source_url": "https://dlstreams.top/player/stream-877.php",
       "source_referer": "https://dlstreams.top/",
-      "status": "error",
-      "duration_seconds": 1028.17,
-      "error": "BrowserType.launch: Timeout 180000ms exceeded.\nCall log:\n  - <launching> /Users/larus54/Library/Caches/ms-playwright/chromium_headless_shell-1208/chrome-headless-shell-mac-arm64/chrome-headless-shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-blink-features=AutomationControlled --disable-dev-shm-usage --user-data-dir=/var/folders/k0/89hxk8vj2p3dvb49ymp9zg5c0000gn/T/playwright_chromiumdev_profile-OapACx --remote-debugging-pipe --no-startup-window\n  - <launched> pid=18428\n",
-      "streams_count": 0,
-      "streams": []
+      "status": "ok",
+      "duration_seconds": 635.4,
+      "streams_count": 1,
+      "streams": [
+        {
+          "url": "https://planetary.lovecdn.ru/ZonaDAZN/index.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3NDIxNTcyMw==.c5b18165f5c1f8ded573630eb71eac1a4d97b2951b07335fa99aff883cd93ec3",
+          "referer": "https://lovetier.bz/",
+          "origin": "https://lovetier.bz",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        }
+      ]
     },
     {
       "source_url": "https://dlstreams.top/player/stream-870.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 1017.11,
-      "streams_count": 0,
-      "streams": []
+      "duration_seconds": 3.66,
+      "streams_count": 1,
+      "streams": [
+        {
+          "url": "https://planetary.lovecdn.ru/SkySportCalcioIT/index.m3u8?token=U2t5U3BvcnRDYWxjaW9JVHxub19jaGVja19pcHwxNzc0MjE1NzI3.85a179badb09a49737fe9282c7912e62023c6c4c70b776017b525cc7e9244ea3",
+          "referer": "https://lovetier.bz/",
+          "origin": "https://lovetier.bz",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        }
+      ]
     },
     {
       "source_url": "https://dlstreams.top/player/stream-461.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 3.85,
-      "streams_count": 1,
+      "duration_seconds": 3.68,
+      "streams_count": 2,
       "streams": [
         {
-          "url": "https://planetary.lovecdn.ru/SkySportUnoIT/index.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzc0MjE0MTMz.e699049f775b15d56bfe98c0051c8809e6cb1cd250c5bfacf502b015a6139c1c",
+          "url": "https://planetary.lovecdn.ru/SkySportUnoIT/index.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzc0MjE1NzMx.d7197b762330c9bfb9bf2c88416ccf6d6561dc972f90f13bcf0b7f53904a29d8",
+          "referer": "https://lovetier.bz/",
+          "origin": "https://lovetier.bz",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        },
+        {
+          "url": "https://planetary.lovecdn.ru/SkySportUnoIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzc0MjE1NzMx.d7197b762330c9bfb9bf2c88416ccf6d6561dc972f90f13bcf0b7f53904a29d8",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
@@ -38,11 +57,11 @@
       "source_url": "https://dlstreams.top/player/stream-576.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 3.38,
+      "duration_seconds": 3.35,
       "streams_count": 1,
       "streams": [
         {
-          "url": "https://planetary.lovecdn.ru/SkySportTennisIT/index.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzc0MjE0MTM3.cb0d5fe487dde28a102a325fbba5393b7bfa367114d22ce8f58d883869f7e647",
+          "url": "https://planetary.lovecdn.ru/SkySportTennisIT/index.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzc0MjE1NzM0.a9b1d36c04287131f818a08a3a116952bbe4326a2e91a837c7f06d54f4c4e566",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
@@ -53,17 +72,11 @@
       "source_url": "https://dlstreams.top/player/stream-575.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 3.63,
-      "streams_count": 2,
+      "duration_seconds": 3.34,
+      "streams_count": 1,
       "streams": [
         {
-          "url": "https://planetary.lovecdn.ru/SkySportMotoGPIT/index.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzc0MjE0MTQw.57a938e50da10ab036e2937bd0c4b59bb5b3200df56e42ecc5a892ebe3cea217",
-          "referer": "https://lovetier.bz/",
-          "origin": "https://lovetier.bz",
-          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
-        },
-        {
-          "url": "https://planetary.lovecdn.ru/SkySportMotoGPIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzc0MjE0MTQw.57a938e50da10ab036e2937bd0c4b59bb5b3200df56e42ecc5a892ebe3cea217",
+          "url": "https://planetary.lovecdn.ru/SkySportMotoGPIT/index.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzc0MjE1NzM4.5dc998c01b5e05e206525c949e7e5003ce633a028a77f91c46735c4fa63eb523",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
@@ -74,11 +87,11 @@
       "source_url": "https://dlstreams.top/player/stream-577.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 3.35,
+      "duration_seconds": 4.66,
       "streams_count": 1,
       "streams": [
         {
-          "url": "https://planetary.lovecdn.ru/SkySportF1IT/index.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzQyMTQxNDQ=.7a2a2c22db516f86e3b6c9f72e5af2d58ce61df9cedf29684920ccbdbfe0075f",
+          "url": "https://planetary.lovecdn.ru/SkySportF1IT/index.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzQyMTU3NDE=.b229ed987298744ce2f08ca1db1819c18c624776a25f4185b141eda0b9a836e4",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
