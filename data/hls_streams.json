@@ -1,76 +1,49 @@
 {
-  "generated_at": "2026-03-26T22:11:06.839533+01:00",
+  "generated_at": "2026-03-27T02:59:20.810975+01:00",
   "total_sources": 6,
   "results": [
     {
       "source_url": "https://dlstreams.top/player/stream-877.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 3.48,
-      "streams_count": 1,
-      "streams": [
-        {
-          "url": "https://beautifulpeople.lovecdn.ru/ZonaDAZN/index.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3NDU1OTc0MQ==.12730a5c340f572cc31b21df3866cd09d5b5ecaef9286bf469f15e5a89a05e40",
-          "referer": "https://lovetier.bz/",
-          "origin": "https://lovetier.bz",
-          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
-        }
-      ]
+      "duration_seconds": 2809.68,
+      "streams_count": 0,
+      "streams": []
     },
     {
       "source_url": "https://dlstreams.top/player/stream-870.php",
       "source_referer": "https://dlstreams.top/",
-      "status": "ok",
-      "duration_seconds": 10.54,
-      "streams_count": 1,
-      "streams": [
-        {
-          "url": "https://beautifulpeople.lovecdn.ru/SkySportCalcioIT/index.m3u8?token=U2t5U3BvcnRDYWxjaW9JVHxub19jaGVja19pcHwxNzc0NTU5NzUy.7c4574925650685e1e08f08c006f5e1f8de1518a79011938365c256b315b85eb",
-          "referer": "https://lovetier.bz/",
-          "origin": "https://lovetier.bz",
-          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
-        }
-      ]
+      "status": "error",
+      "duration_seconds": 977.57,
+      "error": "BrowserType.launch: Timeout 180000ms exceeded.\nCall log:\n  - <launching> /Users/larus54/Library/Caches/ms-playwright/chromium_headless_shell-1208/chrome-headless-shell-mac-arm64/chrome-headless-shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-blink-features=AutomationControlled --disable-dev-shm-usage --user-data-dir=/var/folders/k0/89hxk8vj2p3dvb49ymp9zg5c0000gn/T/playwright_chromiumdev_profile-83XLq4 --remote-debugging-pipe --no-startup-window\n  - <launched> pid=31508\n",
+      "streams_count": 0,
+      "streams": []
     },
     {
       "source_url": "https://dlstreams.top/player/stream-461.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 3.64,
-      "streams_count": 1,
-      "streams": [
-        {
-          "url": "https://beautifulpeople.lovecdn.ru/SkySportUnoIT/index.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzc0NTU5NzU1.09cccb8a7d9adedefa7fc93be78e56f14d51272288d7c84a391b8a77582e8f90",
-          "referer": "https://lovetier.bz/",
-          "origin": "https://lovetier.bz",
-          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
-        }
-      ]
+      "duration_seconds": 1001.38,
+      "streams_count": 0,
+      "streams": []
     },
     {
       "source_url": "https://dlstreams.top/player/stream-576.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 3.53,
-      "streams_count": 1,
-      "streams": [
-        {
-          "url": "https://beautifulpeople.lovecdn.ru/SkySportTennisIT/index.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzc0NTU5NzU5.7224196ecbb8e4717e42a537dcc230250509178ef6273ba92e5ea677bbc47c95",
-          "referer": "https://lovetier.bz/",
-          "origin": "https://lovetier.bz",
-          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
-        }
-      ]
+      "duration_seconds": 1481.73,
+      "streams_count": 0,
+      "streams": []
     },
     {
       "source_url": "https://dlstreams.top/player/stream-575.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 3.41,
+      "duration_seconds": 862.35,
       "streams_count": 1,
       "streams": [
         {
-          "url": "https://beautifulpeople.lovecdn.ru/SkySportMotoGPIT/index.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzc0NTU5NzYy.38912ef5158f40aef88539a2b2a10132df6ad1bbf10ccf7c37b4eeb13dd64c22",
+          "url": "https://beautifulpeople.lovecdn.ru/SkySportMotoGPIT/index.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzc0NTc3MDU2.b459f171bddd83c178d7e63a5e32aa2ae8fb8b31d95d1a9cc69318fb05bb2871",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
@@ -81,11 +54,11 @@
       "source_url": "https://dlstreams.top/player/stream-577.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 3.35,
+      "duration_seconds": 3.4,
       "streams_count": 1,
       "streams": [
         {
-          "url": "https://beautifulpeople.lovecdn.ru/SkySportF1IT/index.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzQ1NTk3NjY=.edf51dcb010406e60a3d977dc19c250d25877347f1b6d304e032f7d8dcbf7322",
+          "url": "https://beautifulpeople.lovecdn.ru/SkySportF1IT/index.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzQ1NzcwNTk=.26b7df1b39bc058cb7ba9b41f4bdfb3d059c5e7a9da331e9bb675d837a52a119",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
