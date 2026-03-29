@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-03-29T14:27:05.983090+02:00",
+  "generated_at": "2026-03-29T14:30:11.792052+02:00",
   "total_sources": 6,
   "results": [
     {
       "source_url": "https://dlstreams.top/player/stream-877.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 9.79,
+      "duration_seconds": 8.9,
       "streams_count": 0,
       "streams": []
     },
@@ -14,7 +14,7 @@
       "source_url": "https://dlstreams.top/player/stream-870.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 16.4,
+      "duration_seconds": 10.21,
       "streams_count": 0,
       "streams": []
     },
@@ -22,7 +22,7 @@
       "source_url": "https://dlstreams.top/player/stream-461.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 8.24,
+      "duration_seconds": 8.9,
       "streams_count": 0,
       "streams": []
     },
@@ -30,19 +30,11 @@
       "source_url": "https://dlstreams.top/player/stream-576.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 20.25,
-      "streams_count": 0,
-      "streams": []
-    },
-    {
-      "source_url": "https://dlstreams.top/player/stream-575.php",
-      "source_referer": "https://dlstreams.top/",
-      "status": "ok",
-      "duration_seconds": 5.43,
+      "duration_seconds": 6.29,
       "streams_count": 1,
       "streams": [
         {
-          "url": "https://beautifulpeople.lovecdn.ru/SkySportMotoGPIT/index.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzc0Nzg3NTIw.a147dca6080560be0a289305f381a05a255057c1855f7144e6b1e6a6c66d41de",
+          "url": "https://beautifulpeople.lovecdn.ru/SkySportTennisIT/index.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzc0Nzg3Njk1.347ef2c212d2e266115b79d4f3508f8ead7d62eb7fbbf823900fb9a65a1cd5de",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
@@ -50,14 +42,22 @@
       ]
     },
     {
+      "source_url": "https://dlstreams.top/player/stream-575.php",
+      "source_referer": "https://dlstreams.top/",
+      "status": "ok",
+      "duration_seconds": 9.85,
+      "streams_count": 0,
+      "streams": []
+    },
+    {
       "source_url": "https://dlstreams.top/player/stream-577.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 4.94,
+      "duration_seconds": 5.71,
       "streams_count": 1,
       "streams": [
         {
-          "url": "https://beautifulpeople.lovecdn.ru/SkySportF1IT/index.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzQ3ODc1MjU=.a6150e545588d6a676e5de0da714010b4a955467cd9dbebd76ae4e84ffa5d6dc",
+          "url": "https://beautifulpeople.lovecdn.ru/SkySportF1IT/index.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzQ3ODc3MTA=.5b1516e2eabbc149fc8af138dbe588b4f19dc0569de585a7e29c27c0792e5cc7",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
