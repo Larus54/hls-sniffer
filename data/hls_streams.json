@@ -1,16 +1,22 @@
 {
-  "generated_at": "2026-04-19T16:21:39.279869+02:00",
+  "generated_at": "2026-04-19T16:24:45.276034+02:00",
   "total_sources": 6,
   "results": [
     {
       "source_url": "https://dlstreams.top/player/stream-877.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 15.63,
-      "streams_count": 1,
+      "duration_seconds": 11.21,
+      "streams_count": 2,
       "streams": [
         {
-          "url": "https://beautifulpeople.lovetier.bz/ZonaDAZN/index.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3NjYwODczNA==.0092e11f2478998c47549cf403373dfef4ff24efcbc774b599f0e6b4a97333b5",
+          "url": "https://beautifulpeople.lovetier.bz/ZonaDAZN/index.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3NjYwODkzMw==.6d6669f78ca3885274278ffb7687f9f376a2a90e16e3397483f535f281a4721a",
+          "referer": "https://lovetier.bz/",
+          "origin": "https://lovetier.bz",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        },
+        {
+          "url": "https://beautifulpeople.lovetier.bz/ZonaDAZN/tracks-v1a1/mono.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3NjYwODkzMw%3D%3D.6d6669f78ca3885274278ffb7687f9f376a2a90e16e3397483f535f281a4721a",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
@@ -21,11 +27,11 @@
       "source_url": "https://dlstreams.top/player/stream-870.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 14.5,
+      "duration_seconds": 9.5,
       "streams_count": 1,
       "streams": [
         {
-          "url": "https://beautifulpeople.lovetier.bz/SkySportCalcioIT/index.m3u8?token=U2t5U3BvcnRDYWxjaW9JVHxub19jaGVja19pcHwxNzc2NjA4NzUw.fb5e9ab1056025302b788d116ecab323541b2c9dc5b4dc5512f0fe9ce1671e9f",
+          "url": "https://beautifulpeople.lovetier.bz/SkySportCalcioIT/index.m3u8?token=U2t5U3BvcnRDYWxjaW9JVHxub19jaGVja19pcHwxNzc2NjA4OTQx.9d3226c3db65171beac6a6be76cdac13d8a396f0b8443b95aec866f913ca0257",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
@@ -36,11 +42,11 @@
       "source_url": "https://dlstreams.top/player/stream-461.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 10.43,
+      "duration_seconds": 10.65,
       "streams_count": 1,
       "streams": [
         {
-          "url": "https://beautifulpeople.lovetier.bz/SkySportUnoIT/index.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzc2NjA4NzYx.c314f7459099dc2d9566a35b9ff85b159a70a95d04a9da062ab41445f2b2aa24",
+          "url": "https://beautifulpeople.lovetier.bz/SkySportUnoIT/index.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzc2NjA4OTUy.28fdf2612060f85d4d0a54f9d6021b0f3a8f84fe53d2382ccd909fb1412919d9",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
@@ -51,11 +57,11 @@
       "source_url": "https://dlstreams.top/player/stream-576.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 11.75,
+      "duration_seconds": 9.94,
       "streams_count": 1,
       "streams": [
         {
-          "url": "https://beautifulpeople.lovetier.bz/SkySportTennisIT/index.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzc2NjA4Nzcz.1352985e208f6bcb24e433b883e6af488f6a82b80a6f21b580e8f438e4840a72",
+          "url": "https://beautifulpeople.lovetier.bz/SkySportTennisIT/index.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzc2NjA4OTYy.bea5d4eee60d32cff2906541636e4a5213be6e97bb3ba758c8c91eb80d14111e",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
@@ -66,11 +72,11 @@
       "source_url": "https://dlstreams.top/player/stream-575.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 11.11,
+      "duration_seconds": 11.17,
       "streams_count": 1,
       "streams": [
         {
-          "url": "https://beautifulpeople.lovetier.bz/SkySportMotoGPIT/index.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzc2NjA4Nzg1.c1a7129b23aa0f2929c0386090526368193c3d303ce63e4cdf166d0c46fa111b",
+          "url": "https://beautifulpeople.lovetier.bz/SkySportMotoGPIT/index.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzc2NjA4OTcz.22be66fc3d6e6364003db182118d65a3913b5dd12c4095c6eaae3a537da39f2f",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
@@ -81,23 +87,11 @@
       "source_url": "https://dlstreams.top/player/stream-577.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 12.83,
-      "streams_count": 3,
+      "duration_seconds": 9.48,
+      "streams_count": 1,
       "streams": [
         {
-          "url": "https://beautifulpeople.lovetier.bz/SkySportF1IT/index.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzY2MDg3OTY=.196952713ac4443ec34b9ab5fe8dc724714f0f3929fe2a610630f26497d577e5",
-          "referer": "https://lovetier.bz/",
-          "origin": "https://lovetier.bz",
-          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
-        },
-        {
-          "url": "https://beautifulpeople.lovetier.bz/SkySportF1IT/tracks-a1/mono.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzY2MDg3OTY%3D.196952713ac4443ec34b9ab5fe8dc724714f0f3929fe2a610630f26497d577e5",
-          "referer": "https://lovetier.bz/",
-          "origin": "https://lovetier.bz",
-          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
-        },
-        {
-          "url": "https://beautifulpeople.lovetier.bz/SkySportF1IT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzY2MDg3OTY%3D.196952713ac4443ec34b9ab5fe8dc724714f0f3929fe2a610630f26497d577e5",
+          "url": "https://beautifulpeople.lovetier.bz/SkySportF1IT/index.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzY2MDg5ODM=.9580f45bd79222828465d47bde89d355e95bc0f6758489bcb98e67082064a4ec",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
