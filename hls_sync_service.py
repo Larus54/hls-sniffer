@@ -15,7 +15,7 @@ import json
 import os
 import time
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import datetime
 from typing import Any, Dict, List, Optional, Tuple
 
 import requests
@@ -23,7 +23,7 @@ import requests
 from hls_sniffer import sniff
 
 GITHUB_API_BASE = "https://api.github.com"
-DEFAULT_INTERVAL_SECONDS = 30 * 60
+DEFAULT_INTERVAL_SECONDS = 10 * 60
 
 
 @dataclass
@@ -38,7 +38,15 @@ class Config:
 
 
 def _now_iso() -> str:
-    return datetime.now(timezone.utc).isoformat()
+    return datetime.now().astimezone().isoformat()
+
+
+def _now_human() -> str:
+    return datetime.now().astimezone().strftime("%d/%m/%Y %H:%M:%S %Z (%z)")
+
+
+def _log(message: str) -> None:
+    print(f"[{_now_human()}] {message}", flush=True)
 
 
 def _load_env_file(path: str) -> bool:
@@ -140,7 +148,7 @@ def _collect_local_snapshot(targets: List[Dict[str, Any]]) -> Dict[str, Any]:
         if referer:
             referer = str(referer).strip()
 
-        print(f"[{idx}/{len(targets)}] Scan: {url}")
+        _log(f"[{idx}/{len(targets)}] Scan: {url}")
         started_at = time.time()
 
         try:
@@ -268,7 +276,7 @@ def _upsert_remote_file(config: Config, payload: Dict[str, Any], previous_sha: O
     encoded = base64.b64encode(raw_json.encode("utf-8")).decode("ascii")
 
     body: Dict[str, Any] = {
-        "message": f"chore(hls): refresh streams {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%SZ')}",
+        "message": f"chore(hls): refresh streams {_now_human()}",
         "content": encoded,
         "branch": config.github_branch,
     }
@@ -285,9 +293,9 @@ def _upsert_remote_file(config: Config, payload: Dict[str, Any], previous_sha: O
 
 
 def _run_once(config: Config) -> None:
-    print("\n" + "=" * 70)
-    print(f"[{_now_iso()}] Inizio sync HLS")
-    print("=" * 70)
+    _log("\n" + "=" * 70)
+    _log("Inizio sync HLS")
+    _log("=" * 70)
 
     targets = _load_targets(config.monitor_urls_file)
     local_payload = _collect_local_snapshot(targets)
@@ -297,21 +305,44 @@ def _run_once(config: Config) -> None:
     local_cmp = _canonical_for_compare(local_payload)
     remote_cmp = _canonical_for_compare(remote_payload or {"results": []})
 
+    _log("\n" + "=" * 70)
+    _log("RIEPILOGO SYNC")
+    _log("=" * 70)
+
     if local_cmp == remote_cmp:
-        print("Nessuna differenza rispetto al JSON su GitHub. Nessun push.")
+        _log("✓ Nessuna differenza trovata. Repository aggiornato.")
+        _log("=" * 70)
         return
 
-    print("Differenze trovate. Aggiorno il file su GitHub...")
+    _log("! Differenze trovate:")
+    local_results = {r["source_url"]: r for r in local_payload.get("results", [])}
+    remote_results = {r["source_url"]: r for r in (remote_payload or {}).get("results", [])}
+    
+    for source_url in local_results:
+        local_r = local_results[source_url]
+        remote_r = remote_results.get(source_url)
+        
+        streams_count = local_r.get("streams_count", 0)
+        if not remote_r:
+            _log(f"  [NUOVO] {source_url} → {streams_count} stream")
+        else:
+            local_streams = sorted([s.get("url") for s in local_r.get("streams", [])])
+            remote_streams = sorted([s.get("url") for s in remote_r.get("streams", [])])
+            if local_streams != remote_streams:
+                _log(f"  [CAMBIATO] {source_url} → {streams_count} stream")
+    
+    _log("\nAggiorno il file su GitHub...")
     _upsert_remote_file(config, local_payload, remote_sha)
-    print("Push completato.")
+    _log("✓ Push completato.")
+    _log("=" * 70)
 
 
 def main() -> None:
     config = _load_config()
-    print("Servizio sync avviato.")
-    print(f"Repo: {config.github_repo}")
-    print(f"File: {config.github_json_path}")
-    print(f"Intervallo: {config.interval_seconds}s")
+    _log("Servizio sync avviato.")
+    _log(f"Repo: {config.github_repo}")
+    _log(f"File: {config.github_json_path}")
+    _log(f"Intervallo: {config.interval_seconds}s")
 
     while True:
         cycle_start = time.time()
@@ -319,11 +350,11 @@ def main() -> None:
         try:
             _run_once(config)
         except Exception as exc:
-            print(f"Errore ciclo sync: {exc}")
+            _log(f"Errore ciclo sync: {exc}")
 
         elapsed = time.time() - cycle_start
         sleep_for = max(5, config.interval_seconds - int(elapsed))
-        print(f"Prossimo ciclo tra {sleep_for}s")
+        _log(f"Prossimo ciclo tra {sleep_for}s")
         time.sleep(sleep_for)
 
 

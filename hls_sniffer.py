@@ -8,6 +8,7 @@ import re
 import sys
 import os
 import time
+from datetime import datetime
 from typing import Dict, Optional
 from urllib.parse import unquote, urljoin, urlparse
 
@@ -48,6 +49,14 @@ USER_AGENT = (
 )
 
 
+def _now_log_ts():
+    return datetime.now().astimezone().strftime('%d/%m/%Y %H:%M:%S %Z (%z)')
+
+
+def _log(msg):
+    print(f"[{_now_log_ts()}] {msg}")
+
+
 # ─── Utility ──────────────────────────────────────────────────────────────────
 
 def find_m3u8_in_text(text, base_url=None):
@@ -79,9 +88,9 @@ def find_m3u8_in_text(text, base_url=None):
 
 
 def print_section(title):
-    print(f"\n{'─' * 50}")
-    print(f"  {title}")
-    print('─' * 50)
+    _log(f"\n{'─' * 50}")
+    _log(f"  {title}")
+    _log('─' * 50)
 
 
 def _default_referrer(url):
@@ -110,6 +119,11 @@ def _build_headers(referrer=None):
 def _looks_like_hls_url(url):
     lowered = unquote(url.lower())
     return '.m3u8' in lowered or 'm3u8' in lowered
+
+
+def _is_priority_index_token_url(url):
+    lowered = unquote(url.lower())
+    return '/index.m3u8' in lowered and 'token=' in lowered
 
 
 def _is_http_url(url):
@@ -282,10 +296,11 @@ def sniff_with_playwright(url, referrer=None, include_metadata=False):
     """
     found = set()
     stream_metadata = {}
+    should_stop_early = False
 
     if not PLAYWRIGHT_AVAILABLE:
-        print("  ✗ Playwright non installato.")
-        print("    Installa con:  pip install playwright && playwright install chromium")
+        _log("  ✗ Playwright non installato.")
+        _log("    Installa con:  pip install playwright && playwright install chromium")
         if include_metadata:
             return found, stream_metadata
         return found
@@ -294,8 +309,8 @@ def sniff_with_playwright(url, referrer=None, include_metadata=False):
     if not referrer:
         referrer = _default_referrer(url)
 
-    print(f"  → Avvio Chromium headless...")
-    print(f"  → Referer: {referrer}")
+    _log("  → Avvio Chromium headless...")
+    _log(f"  → Referer: {referrer}")
 
     with sync_playwright() as p:
         browser = p.chromium.launch(
@@ -328,14 +343,18 @@ def sniff_with_playwright(url, referrer=None, include_metadata=False):
         page.route('**/*', route_handler)
 
         def on_request(req):
+            nonlocal should_stop_early
             if _is_http_url(req.url) and _looks_like_hls_url(req.url):
-                print(f"  ★ {req.url}")
+                _log(f"  ★ {req.url}")
                 found.add(req.url)
+                if _is_priority_index_token_url(req.url):
+                    should_stop_early = True
                 if include_metadata:
                     meta = _extract_request_metadata(req.headers, referrer)
                     _merge_stream_metadata(stream_metadata, req.url, meta)
 
         def on_response(resp):
+            nonlocal should_stop_early
             content_type = resp.headers.get('content-type', '').lower()
             is_hls_type = (
                 'application/vnd.apple.mpegurl' in content_type
@@ -346,6 +365,8 @@ def sniff_with_playwright(url, referrer=None, include_metadata=False):
 
             if _is_http_url(resp.url) and (_looks_like_hls_url(resp.url) or is_hls_type):
                 found.add(resp.url)
+                if _is_priority_index_token_url(resp.url):
+                    should_stop_early = True
                 if include_metadata:
                     meta = _extract_request_metadata(resp.request.headers, referrer)
                     _merge_stream_metadata(stream_metadata, resp.url, meta)
@@ -358,8 +379,10 @@ def sniff_with_playwright(url, referrer=None, include_metadata=False):
                     stripped = body.lstrip('\ufeff\r\n\t ')
                     is_manifest_body = stripped.startswith('#EXTM3U') and len(stripped.split('\n')) > 1
                     if is_manifest_body and _is_http_url(resp.url):
-                        print(f"  ★ {resp.url}  [manifest detected]")
+                        _log(f"  ★ {resp.url}  [manifest detected]")
                         found.add(resp.url)
+                        if _is_priority_index_token_url(resp.url):
+                            should_stop_early = True
                         if include_metadata:
                             meta = _extract_request_metadata(resp.request.headers, referrer)
                             _merge_stream_metadata(stream_metadata, resp.url, meta)
@@ -370,9 +393,19 @@ def sniff_with_playwright(url, referrer=None, include_metadata=False):
         page.on('response', on_response)
 
         try:
-            page.goto(url, wait_until='networkidle', timeout=GOTO_TIMEOUT_MS, referer=referrer)
+            # domcontentloaded evita attese lunghe su pagine che continuano a fare polling.
+            page.goto(url, wait_until='domcontentloaded', timeout=GOTO_TIMEOUT_MS, referer=referrer)
         except Exception:
             pass  # timeout goto — continua comunque
+
+        # Se abbiamo gia trovato index.m3u8?token=... passiamo subito al target successivo.
+        if should_stop_early:
+            _log("  → Manifest index con token trovato: passo subito al prossimo target.")
+            ctx.close()
+            browser.close()
+            if include_metadata:
+                return found, stream_metadata
+            return found
 
         # Scansiona anche l'HTML renderizzato
         try:
@@ -381,11 +414,23 @@ def sniff_with_playwright(url, referrer=None, include_metadata=False):
         except Exception:
             pass
 
-        # Attesa extra per player lenti
+        # Attesa extra per player lenti, interrompibile appena arriva index.m3u8?token=...
         if not found:
-            print(f"  → Attendo {EXTRA_WAIT_MS / 1000:.1f}s per player lenti...")
+            _log(f"  → Attendo {EXTRA_WAIT_MS / 1000:.1f}s per player lenti...")
             try:
-                page.wait_for_timeout(EXTRA_WAIT_MS)
+                waited_ms = 0
+                step_ms = 250
+                while waited_ms < EXTRA_WAIT_MS:
+                    if should_stop_early:
+                        _log("  → Manifest index con token trovato durante attesa: passo subito al prossimo target.")
+                        ctx.close()
+                        browser.close()
+                        if include_metadata:
+                            return found, stream_metadata
+                        return found
+                    page.wait_for_timeout(step_ms)
+                    waited_ms += step_ms
+
                 for u in find_m3u8_in_text(page.content(), url):
                     found.add(u)
             except Exception:
@@ -404,9 +449,9 @@ def sniff_with_playwright(url, referrer=None, include_metadata=False):
 
 def sniff(url, referrer=None, skip_requests=True, include_metadata=False):
     start_time = time.time()
-    print(f"\n  URL: {url}")
+    _log(f"\n  URL: {url}")
     if referrer:
-        print(f"  Referer: {referrer}")
+        _log(f"  Referer: {referrer}")
 
     streams_requests = set()
     metadata_requests = {}
@@ -415,9 +460,9 @@ def sniff(url, referrer=None, skip_requests=True, include_metadata=False):
         print_section("Scan HTTP (requests)")
         streams_requests = sniff_with_requests(url, referrer=referrer)
         if streams_requests:
-            print(f"\n  ✓ requests: trovati {len(streams_requests)} stream(s).")
+            _log(f"\n  ✓ requests: trovati {len(streams_requests)} stream(s).")
         else:
-            print("\n  requests: nessuno stream trovato.")
+            _log("\n  requests: nessuno stream trovato.")
 
     print_section("Scan browser (Playwright/Chromium)")
     if include_metadata:
@@ -427,18 +472,18 @@ def sniff(url, referrer=None, skip_requests=True, include_metadata=False):
         metadata_browser = {}
     
     if streams_browser:
-        print(f"\n  ✓ Playwright: trovati {len(streams_browser)} stream(s).")
+        _log(f"\n  ✓ Playwright: trovati {len(streams_browser)} stream(s).")
     else:
-        print("\n  Playwright: nessuno stream trovato.")
+        _log("\n  Playwright: nessuno stream trovato.")
 
     streams = streams_requests | streams_browser
     elapsed = time.time() - start_time
     if streams:
-        print(f"\n  ✓ Totale unificato: {len(streams)} stream(s).")
+        _log(f"\n  ✓ Totale unificato: {len(streams)} stream(s).")
     else:
-        print("\n  Nessuno stream trovato.")
+        _log("\n  Nessuno stream trovato.")
     
-    print(f"\n  ⏱ Tempo totale: {elapsed:.2f}s")
+    _log(f"\n  ⏱ Tempo totale: {elapsed:.2f}s")
 
     if include_metadata:
         metadata = {}

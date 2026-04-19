@@ -1,0 +1,1212 @@
+Servizio sync avviato.
+Repo: Larus54/hls-sniffer
+File: data/hls_streams.json
+Intervallo: 1800s
+
+======================================================================
+[2026-03-19T02:13:06.901197+01:00] Inizio sync HLS
+======================================================================
+[1/6] Scan: https://dlstreams.top/player/stream-877.php
+
+  URL: https://dlstreams.top/player/stream-877.php
+  Referer: https://dlstreams.top/
+
+──────────────────────────────────────────────────
+  Scan browser (Playwright/Chromium)
+──────────────────────────────────────────────────
+  → Avvio Chromium headless...
+  → Referer: https://dlstreams.top/
+  ★ https://planetary.lovecdn.ru/ZonaDAZN/index.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3Mzg4MzA4OQ==.a49ce0ad2a0cb53ce5c931128e0e3f974c309f1d527cf1d5153ebca607789acf
+  ★ https://planetary.lovecdn.ru/ZonaDAZN/tracks-v1a1/mono.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3Mzg4MzA4OQ%3D%3D.a49ce0ad2a0cb53ce5c931128e0e3f974c309f1d527cf1d5153ebca607789acf
+
+  ✓ Playwright: trovati 2 stream(s).
+
+  ✓ Totale unificato: 2 stream(s).
+
+  ⏱ Tempo totale: 7.79s
+[2/6] Scan: https://dlstreams.top/player/stream-870.php
+
+  URL: https://dlstreams.top/player/stream-870.php
+  Referer: https://dlstreams.top/
+
+──────────────────────────────────────────────────
+  Scan browser (Playwright/Chromium)
+──────────────────────────────────────────────────
+  → Avvio Chromium headless...
+  → Referer: https://dlstreams.top/
+  ★ https://planetary.lovecdn.ru/SkySportCalcioIT/index.m3u8?token=U2t5U3BvcnRDYWxjaW9JVHxub19jaGVja19pcHwxNzczODgzMDk3.2eb3c31bcf4fd35b723aecd857df02cd4d546df6f9be9a82b61e8a09ae000abb
+  ★ https://planetary.lovecdn.ru/SkySportCalcioIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRDYWxjaW9JVHxub19jaGVja19pcHwxNzczODgzMDk3.2eb3c31bcf4fd35b723aecd857df02cd4d546df6f9be9a82b61e8a09ae000abb
+
+  ✓ Playwright: trovati 2 stream(s).
+
+  ✓ Totale unificato: 2 stream(s).
+
+  ⏱ Tempo totale: 5.36s
+[3/6] Scan: https://dlstreams.top/player/stream-461.php
+
+  URL: https://dlstreams.top/player/stream-461.php
+  Referer: https://dlstreams.top/
+
+──────────────────────────────────────────────────
+  Scan browser (Playwright/Chromium)
+──────────────────────────────────────────────────
+  → Avvio Chromium headless...
+  → Referer: https://dlstreams.top/
+  ★ https://planetary.lovecdn.ru/SkySportUnoIT/index.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzczODgzMTAy.d1d22999061bc01e65549b3528cf50696592a28d006e4ffbe06c784c512f2fb7
+  ★ https://planetary.lovecdn.ru/SkySportUnoIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzczODgzMTAy.d1d22999061bc01e65549b3528cf50696592a28d006e4ffbe06c784c512f2fb7
+
+  ✓ Playwright: trovati 2 stream(s).
+
+  ✓ Totale unificato: 2 stream(s).
+
+  ⏱ Tempo totale: 6.18s
+[4/6] Scan: https://dlstreams.top/player/stream-576.php
+
+  URL: https://dlstreams.top/player/stream-576.php
+  Referer: https://dlstreams.top/
+
+──────────────────────────────────────────────────
+  Scan browser (Playwright/Chromium)
+──────────────────────────────────────────────────
+  → Avvio Chromium headless...
+  → Referer: https://dlstreams.top/
+  ★ https://planetary.lovecdn.ru/SkySportTennisIT/index.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzczODgzMTA4.e76d5e920114d0fc4942ec72730b45df5cd11be35249f780cd6a1658a89a24b6
+  ★ https://planetary.lovecdn.ru/SkySportTennisIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzczODgzMTA4.e76d5e920114d0fc4942ec72730b45df5cd11be35249f780cd6a1658a89a24b6
+
+  ✓ Playwright: trovati 2 stream(s).
+
+  ✓ Totale unificato: 2 stream(s).
+
+  ⏱ Tempo totale: 5.37s
+[5/6] Scan: https://dlstreams.top/player/stream-575.php
+
+  URL: https://dlstreams.top/player/stream-575.php
+  Referer: https://dlstreams.top/
+
+──────────────────────────────────────────────────
+  Scan browser (Playwright/Chromium)
+──────────────────────────────────────────────────
+  → Avvio Chromium headless...
+  → Referer: https://dlstreams.top/
+  ★ https://planetary.lovecdn.ru/SkySportMotoGPIT/index.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzczODgzMTE0.1ccae8d87c3f288e685cfdf1e29e882c992703c3ec34800311bc38f15198344e
+  ★ https://planetary.lovecdn.ru/SkySportMotoGPIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzczODgzMTE0.1ccae8d87c3f288e685cfdf1e29e882c992703c3ec34800311bc38f15198344e
+
+  ✓ Playwright: trovati 2 stream(s).
+
+  ✓ Totale unificato: 2 stream(s).
+
+  ⏱ Tempo totale: 9.41s
+[6/6] Scan: https://dlstreams.top/player/stream-577.php
+
+  URL: https://dlstreams.top/player/stream-577.php
+  Referer: https://dlstreams.top/
+
+──────────────────────────────────────────────────
+  Scan browser (Playwright/Chromium)
+──────────────────────────────────────────────────
+  → Avvio Chromium headless...
+  → Referer: https://dlstreams.top/
+  ★ https://planetary.lovecdn.ru/SkySportF1IT/index.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzM4ODMxMjM=.6908c4ed2ccde74b25a5ce745c1f83afd301c9d2774e04ae45c5e12e8f883aa1
+  ★ https://planetary.lovecdn.ru/SkySportF1IT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzM4ODMxMjM%3D.6908c4ed2ccde74b25a5ce745c1f83afd301c9d2774e04ae45c5e12e8f883aa1
+  ★ https://planetary.lovecdn.ru/SkySportF1IT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzM4ODMxMjM%3D.6908c4ed2ccde74b25a5ce745c1f83afd301c9d2774e04ae45c5e12e8f883aa1
+
+  ✓ Playwright: trovati 2 stream(s).
+
+  ✓ Totale unificato: 2 stream(s).
+
+  ⏱ Tempo totale: 12.53s
+
+======================================================================
+RIEPILOGO SYNC
+======================================================================
+! Differenze trovate:
+  [CAMBIATO] https://dlstreams.top/player/stream-877.php → 2 stream
+  [CAMBIATO] https://dlstreams.top/player/stream-870.php → 2 stream
+  [CAMBIATO] https://dlstreams.top/player/stream-461.php → 2 stream
+  [CAMBIATO] https://dlstreams.top/player/stream-576.php → 2 stream
+  [CAMBIATO] https://dlstreams.top/player/stream-575.php → 2 stream
+  [CAMBIATO] https://dlstreams.top/player/stream-577.php → 2 stream
+
+Aggiorno il file su GitHub...
+✓ Push completato.
+======================================================================
+Prossimo ciclo tra 1753s
+Servizio sync avviato.
+Repo: Larus54/hls-sniffer
+File: data/hls_streams.json
+Intervallo: 1800s
+
+======================================================================
+[2026-03-19T02:35:23.279053+01:00] Inizio sync HLS
+======================================================================
+[1/6] Scan: https://dlstreams.top/player/stream-877.php
+
+  URL: https://dlstreams.top/player/stream-877.php
+  Referer: https://dlstreams.top/
+
+──────────────────────────────────────────────────
+  Scan browser (Playwright/Chromium)
+──────────────────────────────────────────────────
+  → Avvio Chromium headless...
+  → Referer: https://dlstreams.top/
+  ★ https://planetary.lovecdn.ru/ZonaDAZN/index.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3Mzg4NDQyNg==.22938d70d49cefa54208de3180454b178580a1a2c0f0332bf618fc0ec814546b
+  ★ https://planetary.lovecdn.ru/ZonaDAZN/tracks-v1a1/mono.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3Mzg4NDQyNg%3D%3D.22938d70d49cefa54208de3180454b178580a1a2c0f0332bf618fc0ec814546b
+
+  ✓ Playwright: trovati 2 stream(s).
+
+  ✓ Totale unificato: 2 stream(s).
+
+  ⏱ Tempo totale: 8.45s
+[2/6] Scan: https://dlstreams.top/player/stream-870.php
+
+  URL: https://dlstreams.top/player/stream-870.php
+  Referer: https://dlstreams.top/
+
+──────────────────────────────────────────────────
+  Scan browser (Playwright/Chromium)
+──────────────────────────────────────────────────
+  → Avvio Chromium headless...
+  → Referer: https://dlstreams.top/
+  ★ https://planetary.lovecdn.ru/SkySportCalcioIT/index.m3u8?token=U2t5U3BvcnRDYWxjaW9JVHxub19jaGVja19pcHwxNzczODg0NDM0.d3d084ccdf9b2f5809d4ae18986901fb14d0e316e32fc5ace99b664ff54b1c91
+  ★ https://planetary.lovecdn.ru/SkySportCalcioIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRDYWxjaW9JVHxub19jaGVja19pcHwxNzczODg0NDM0.d3d084ccdf9b2f5809d4ae18986901fb14d0e316e32fc5ace99b664ff54b1c91
+
+  ✓ Playwright: trovati 2 stream(s).
+
+  ✓ Totale unificato: 2 stream(s).
+
+  ⏱ Tempo totale: 5.34s
+[3/6] Scan: https://dlstreams.top/player/stream-461.php
+
+  URL: https://dlstreams.top/player/stream-461.php
+  Referer: https://dlstreams.top/
+
+──────────────────────────────────────────────────
+  Scan browser (Playwright/Chromium)
+──────────────────────────────────────────────────
+  → Avvio Chromium headless...
+  → Referer: https://dlstreams.top/
+  ★ https://planetary.lovecdn.ru/SkySportUnoIT/index.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzczODg0NDM5.81144f63a59375da9f942ad6fc11e048c51e3dc3ea8e977764db0b516b492225
+  ★ https://planetary.lovecdn.ru/SkySportUnoIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzczODg0NDM5.81144f63a59375da9f942ad6fc11e048c51e3dc3ea8e977764db0b516b492225
+
+  ✓ Playwright: trovati 2 stream(s).
+
+  ✓ Totale unificato: 2 stream(s).
+
+  ⏱ Tempo totale: 5.60s
+[4/6] Scan: https://dlstreams.top/player/stream-576.php
+
+  URL: https://dlstreams.top/player/stream-576.php
+  Referer: https://dlstreams.top/
+
+──────────────────────────────────────────────────
+  Scan browser (Playwright/Chromium)
+──────────────────────────────────────────────────
+  → Avvio Chromium headless...
+  → Referer: https://dlstreams.top/
+  ★ https://planetary.lovecdn.ru/SkySportTennisIT/index.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzczODg0NDQ1.b79ee8dd32ed0dd0234d177b9ab613a41c12de68e921eed476964a868c3d0d56
+  ★ https://planetary.lovecdn.ru/SkySportTennisIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzczODg0NDQ1.b79ee8dd32ed0dd0234d177b9ab613a41c12de68e921eed476964a868c3d0d56
+
+  ✓ Playwright: trovati 2 stream(s).
+
+  ✓ Totale unificato: 2 stream(s).
+
+  ⏱ Tempo totale: 5.66s
+[5/6] Scan: https://dlstreams.top/player/stream-575.php
+
+  URL: https://dlstreams.top/player/stream-575.php
+  Referer: https://dlstreams.top/
+
+──────────────────────────────────────────────────
+  Scan browser (Playwright/Chromium)
+──────────────────────────────────────────────────
+  → Avvio Chromium headless...
+  → Referer: https://dlstreams.top/
+  ★ https://planetary.lovecdn.ru/SkySportMotoGPIT/index.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzczODg0NDUx.a3f0f9699bd7acfcc8c7fe3b448e01e73c51fec3bcd444455f2bce723899f84c
+  ★ https://planetary.lovecdn.ru/SkySportMotoGPIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzczODg0NDUx.a3f0f9699bd7acfcc8c7fe3b448e01e73c51fec3bcd444455f2bce723899f84c
+
+  ✓ Playwright: trovati 2 stream(s).
+
+  ✓ Totale unificato: 2 stream(s).
+
+  ⏱ Tempo totale: 8.06s
+[6/6] Scan: https://dlstreams.top/player/stream-577.php
+
+  URL: https://dlstreams.top/player/stream-577.php
+  Referer: https://dlstreams.top/
+
+──────────────────────────────────────────────────
+  Scan browser (Playwright/Chromium)
+──────────────────────────────────────────────────
+  → Avvio Chromium headless...
+  → Referer: https://dlstreams.top/
+  ★ https://planetary.lovecdn.ru/SkySportF1IT/index.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzM4ODQ0NTk=.a76a8cc3e2e5f8166882738fb66b16e5c8fa28c66f1cf8032be90c47130b412d
+  ★ https://planetary.lovecdn.ru/SkySportF1IT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzM4ODQ0NTk%3D.a76a8cc3e2e5f8166882738fb66b16e5c8fa28c66f1cf8032be90c47130b412d
+  ★ https://planetary.lovecdn.ru/SkySportF1IT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzM4ODQ0NTk%3D.a76a8cc3e2e5f8166882738fb66b16e5c8fa28c66f1cf8032be90c47130b412d
+
+  ✓ Playwright: trovati 2 stream(s).
+
+  ✓ Totale unificato: 2 stream(s).
+
+  ⏱ Tempo totale: 14.11s
+
+======================================================================
+RIEPILOGO SYNC
+======================================================================
+! Differenze trovate:
+  [CAMBIATO] https://dlstreams.top/player/stream-877.php → 2 stream
+  [CAMBIATO] https://dlstreams.top/player/stream-870.php → 2 stream
+  [CAMBIATO] https://dlstreams.top/player/stream-461.php → 2 stream
+  [CAMBIATO] https://dlstreams.top/player/stream-576.php → 2 stream
+  [CAMBIATO] https://dlstreams.top/player/stream-575.php → 2 stream
+  [CAMBIATO] https://dlstreams.top/player/stream-577.php → 2 stream
+
+Aggiorno il file su GitHub...
+✓ Push completato.
+======================================================================
+Prossimo ciclo tra 1752s
+
+======================================================================
+[2026-03-19T05:04:34.072098+01:00] Inizio sync HLS
+======================================================================
+[1/6] Scan: https://dlstreams.top/player/stream-877.php
+
+  URL: https://dlstreams.top/player/stream-877.php
+  Referer: https://dlstreams.top/
+
+──────────────────────────────────────────────────
+  Scan browser (Playwright/Chromium)
+──────────────────────────────────────────────────
+  → Avvio Chromium headless...
+  → Referer: https://dlstreams.top/
+  ★ https://planetary.lovecdn.ru/ZonaDAZN/index.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3Mzg5MzM3OA==.9a48f9a74d72536f42e21263ccddfbae586ddd5d7f08a6fe01e12c7ab9a7262a
+  ★ https://planetary.lovecdn.ru/ZonaDAZN/tracks-v1a1/mono.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3Mzg5MzM3OA%3D%3D.9a48f9a74d72536f42e21263ccddfbae586ddd5d7f08a6fe01e12c7ab9a7262a
+
+  ✓ Playwright: trovati 2 stream(s).
+
+  ✓ Totale unificato: 2 stream(s).
+
+  ⏱ Tempo totale: 9.25s
+[2/6] Scan: https://dlstreams.top/player/stream-870.php
+
+  URL: https://dlstreams.top/player/stream-870.php
+  Referer: https://dlstreams.top/
+
+──────────────────────────────────────────────────
+  Scan browser (Playwright/Chromium)
+──────────────────────────────────────────────────
+  → Avvio Chromium headless...
+  → Referer: https://dlstreams.top/
+  ★ https://planetary.lovecdn.ru/SkySportCalcioIT/index.m3u8?token=U2t5U3BvcnRDYWxjaW9JVHxub19jaGVja19pcHwxNzczODkzMzg2.ecc17c5c624f6b12cb449d76063bebeaba53d883a95dc2071a0259456fa3d2c8
+  ★ https://planetary.lovecdn.ru/SkySportCalcioIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRDYWxjaW9JVHxub19jaGVja19pcHwxNzczODkzMzg2.ecc17c5c624f6b12cb449d76063bebeaba53d883a95dc2071a0259456fa3d2c8
+
+  ✓ Playwright: trovati 2 stream(s).
+
+  ✓ Totale unificato: 2 stream(s).
+
+  ⏱ Tempo totale: 5.91s
+[3/6] Scan: https://dlstreams.top/player/stream-461.php
+
+  URL: https://dlstreams.top/player/stream-461.php
+  Referer: https://dlstreams.top/
+
+──────────────────────────────────────────────────
+  Scan browser (Playwright/Chromium)
+──────────────────────────────────────────────────
+  → Avvio Chromium headless...
+  → Referer: https://dlstreams.top/
+  ★ https://planetary.lovecdn.ru/SkySportUnoIT/index.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzczODkzMzky.6a2b382ab16e0236fd8bb22180ce76a170101492904e73d88d9639724272ff3d
+  ★ https://planetary.lovecdn.ru/SkySportUnoIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzczODkzMzky.6a2b382ab16e0236fd8bb22180ce76a170101492904e73d88d9639724272ff3d
+
+  ✓ Playwright: trovati 2 stream(s).
+
+  ✓ Totale unificato: 2 stream(s).
+
+  ⏱ Tempo totale: 7.85s
+[4/6] Scan: https://dlstreams.top/player/stream-576.php
+
+  URL: https://dlstreams.top/player/stream-576.php
+  Referer: https://dlstreams.top/
+
+──────────────────────────────────────────────────
+  Scan browser (Playwright/Chromium)
+──────────────────────────────────────────────────
+  → Avvio Chromium headless...
+  → Referer: https://dlstreams.top/
+  ★ https://planetary.lovecdn.ru/SkySportTennisIT/index.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzczODkzMzk5.a91988b221de07ddcb73c068e3ed3a7e9f6a40ec0105c5616fb28c7f45422304
+  ★ https://planetary.lovecdn.ru/SkySportTennisIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzczODkzMzk5.a91988b221de07ddcb73c068e3ed3a7e9f6a40ec0105c5616fb28c7f45422304
+
+  ✓ Playwright: trovati 2 stream(s).
+
+  ✓ Totale unificato: 2 stream(s).
+
+  ⏱ Tempo totale: 5.82s
+[5/6] Scan: https://dlstreams.top/player/stream-575.php
+
+  URL: https://dlstreams.top/player/stream-575.php
+  Referer: https://dlstreams.top/
+
+──────────────────────────────────────────────────
+  Scan browser (Playwright/Chromium)
+──────────────────────────────────────────────────
+  → Avvio Chromium headless...
+  → Referer: https://dlstreams.top/
+  ★ https://planetary.lovecdn.ru/SkySportMotoGPIT/index.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzczODkzNDA1.3ae2cda5f9e7eb5832078bb9f9ed5e610bdf8a5939507cfde47df34bb6bf27c8
+  ★ https://planetary.lovecdn.ru/SkySportMotoGPIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzczODkzNDA1.3ae2cda5f9e7eb5832078bb9f9ed5e610bdf8a5939507cfde47df34bb6bf27c8
+  ★ https://planetary.lovecdn.ru/SkySportMotoGPIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzczODkzNDA1.3ae2cda5f9e7eb5832078bb9f9ed5e610bdf8a5939507cfde47df34bb6bf27c8
+
+  ✓ Playwright: trovati 2 stream(s).
+
+  ✓ Totale unificato: 2 stream(s).
+
+  ⏱ Tempo totale: 15.36s
+[6/6] Scan: https://dlstreams.top/player/stream-577.php
+
+  URL: https://dlstreams.top/player/stream-577.php
+  Referer: https://dlstreams.top/
+
+──────────────────────────────────────────────────
+  Scan browser (Playwright/Chromium)
+──────────────────────────────────────────────────
+  → Avvio Chromium headless...
+  → Referer: https://dlstreams.top/
+  ★ https://planetary.lovecdn.ru/SkySportF1IT/index.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzM4OTM0MjE=.ec3a65082f44d934d2d5c754a6ff6e113cfbb6f25bf7608c13a0ee2f9795d198
+  ★ https://planetary.lovecdn.ru/SkySportF1IT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzM4OTM0MjE%3D.ec3a65082f44d934d2d5c754a6ff6e113cfbb6f25bf7608c13a0ee2f9795d198
+  ★ https://planetary.lovecdn.ru/SkySportF1IT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzM4OTM0MjE%3D.ec3a65082f44d934d2d5c754a6ff6e113cfbb6f25bf7608c13a0ee2f9795d198
+  ★ https://planetary.lovecdn.ru/SkySportF1IT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzM4OTM0MjE%3D.ec3a65082f44d934d2d5c754a6ff6e113cfbb6f25bf7608c13a0ee2f9795d198
+
+  ✓ Playwright: trovati 2 stream(s).
+
+  ✓ Totale unificato: 2 stream(s).
+
+  ⏱ Tempo totale: 15.40s
+
+======================================================================
+RIEPILOGO SYNC
+======================================================================
+! Differenze trovate:
+  [CAMBIATO] https://dlstreams.top/player/stream-877.php → 2 stream
+  [CAMBIATO] https://dlstreams.top/player/stream-870.php → 2 stream
+  [CAMBIATO] https://dlstreams.top/player/stream-461.php → 2 stream
+  [CAMBIATO] https://dlstreams.top/player/stream-576.php → 2 stream
+  [CAMBIATO] https://dlstreams.top/player/stream-575.php → 2 stream
+  [CAMBIATO] https://dlstreams.top/player/stream-577.php → 2 stream
+
+Aggiorno il file su GitHub...
+✓ Push completato.
+======================================================================
+Prossimo ciclo tra 1740s
+
+======================================================================
+[2026-03-19T05:34:34.878766+01:00] Inizio sync HLS
+======================================================================
+[1/6] Scan: https://dlstreams.top/player/stream-877.php
+
+  URL: https://dlstreams.top/player/stream-877.php
+  Referer: https://dlstreams.top/
+
+──────────────────────────────────────────────────
+  Scan browser (Playwright/Chromium)
+──────────────────────────────────────────────────
+  → Avvio Chromium headless...
+  → Referer: https://dlstreams.top/
+  ★ https://planetary.lovecdn.ru/ZonaDAZN/index.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3Mzg5NTE3OA==.37966e054584a1dc249a7357a928939d934e11bbbcd22843b6de8cb2deca1ec1
+  ★ https://planetary.lovecdn.ru/ZonaDAZN/tracks-v1a1/mono.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3Mzg5NTE3OA%3D%3D.37966e054584a1dc249a7357a928939d934e11bbbcd22843b6de8cb2deca1ec1
+
+  ✓ Playwright: trovati 2 stream(s).
+
+  ✓ Totale unificato: 2 stream(s).
+
+  ⏱ Tempo totale: 8.65s
+[2/6] Scan: https://dlstreams.top/player/stream-870.php
+
+  URL: https://dlstreams.top/player/stream-870.php
+  Referer: https://dlstreams.top/
+
+──────────────────────────────────────────────────
+  Scan browser (Playwright/Chromium)
+──────────────────────────────────────────────────
+  → Avvio Chromium headless...
+  → Referer: https://dlstreams.top/
+  ★ https://planetary.lovecdn.ru/SkySportCalcioIT/index.m3u8?token=U2t5U3BvcnRDYWxjaW9JVHxub19jaGVja19pcHwxNzczODk1MTg2.cc575d3a8be5f39a7c1775528d2b95c048a410365d66278b6ae5c3eaee55659c
+  ★ https://planetary.lovecdn.ru/SkySportCalcioIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRDYWxjaW9JVHxub19jaGVja19pcHwxNzczODk1MTg2.cc575d3a8be5f39a7c1775528d2b95c048a410365d66278b6ae5c3eaee55659c
+
+  ✓ Playwright: trovati 2 stream(s).
+
+  ✓ Totale unificato: 2 stream(s).
+
+  ⏱ Tempo totale: 6.11s
+[3/6] Scan: https://dlstreams.top/player/stream-461.php
+
+  URL: https://dlstreams.top/player/stream-461.php
+  Referer: https://dlstreams.top/
+
+──────────────────────────────────────────────────
+  Scan browser (Playwright/Chromium)
+──────────────────────────────────────────────────
+  → Avvio Chromium headless...
+  → Referer: https://dlstreams.top/
+  ★ https://planetary.lovecdn.ru/SkySportUnoIT/index.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzczODk1MTky.4eba894e5852744b39e874f808489242ed484c63c3fabb7458ec0a9d20f20c0e
+  ★ https://planetary.lovecdn.ru/SkySportUnoIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzczODk1MTky.4eba894e5852744b39e874f808489242ed484c63c3fabb7458ec0a9d20f20c0e
+
+  ✓ Playwright: trovati 2 stream(s).
+
+  ✓ Totale unificato: 2 stream(s).
+
+  ⏱ Tempo totale: 5.92s
+[4/6] Scan: https://dlstreams.top/player/stream-576.php
+
+  URL: https://dlstreams.top/player/stream-576.php
+  Referer: https://dlstreams.top/
+
+──────────────────────────────────────────────────
+  Scan browser (Playwright/Chromium)
+──────────────────────────────────────────────────
+  → Avvio Chromium headless...
+  → Referer: https://dlstreams.top/
+  ★ https://planetary.lovecdn.ru/SkySportTennisIT/index.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzczODk1MTk4.c359c9efb1c9106972b6b98b5796003f77cfea2e65b15c14ad7515fdebd83dc8
+  ★ https://planetary.lovecdn.ru/SkySportTennisIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzczODk1MTk4.c359c9efb1c9106972b6b98b5796003f77cfea2e65b15c14ad7515fdebd83dc8
+
+  ✓ Playwright: trovati 2 stream(s).
+
+  ✓ Totale unificato: 2 stream(s).
+
+  ⏱ Tempo totale: 5.84s
+[5/6] Scan: https://dlstreams.top/player/stream-575.php
+
+  URL: https://dlstreams.top/player/stream-575.php
+  Referer: https://dlstreams.top/
+
+──────────────────────────────────────────────────
+  Scan browser (Playwright/Chromium)
+──────────────────────────────────────────────────
+  → Avvio Chromium headless...
+  → Referer: https://dlstreams.top/
+  ★ https://planetary.lovecdn.ru/SkySportMotoGPIT/index.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzczODk1MjA0.9e7d368a1523ef237568c8006c4d19cefb8eb672d99ec880094ec8ba4fa5633f
+  ★ https://planetary.lovecdn.ru/SkySportMotoGPIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzczODk1MjA0.9e7d368a1523ef237568c8006c4d19cefb8eb672d99ec880094ec8ba4fa5633f
+  ★ https://planetary.lovecdn.ru/SkySportMotoGPIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzczODk1MjA0.9e7d368a1523ef237568c8006c4d19cefb8eb672d99ec880094ec8ba4fa5633f
+
+  ✓ Playwright: trovati 2 stream(s).
+
+  ✓ Totale unificato: 2 stream(s).
+
+  ⏱ Tempo totale: 12.75s
+[6/6] Scan: https://dlstreams.top/player/stream-577.php
+
+  URL: https://dlstreams.top/player/stream-577.php
+  Referer: https://dlstreams.top/
+
+──────────────────────────────────────────────────
+  Scan browser (Playwright/Chromium)
+──────────────────────────────────────────────────
+  → Avvio Chromium headless...
+  → Referer: https://dlstreams.top/
+  ★ https://planetary.lovecdn.ru/SkySportF1IT/index.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzM4OTUyMTY=.7fc1686542c19a1470499959aa1895abc2949652ffe0255e7bd7c5b146ea07ed
+  ★ https://planetary.lovecdn.ru/SkySportF1IT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzM4OTUyMTY%3D.7fc1686542c19a1470499959aa1895abc2949652ffe0255e7bd7c5b146ea07ed
+  ★ https://planetary.lovecdn.ru/SkySportF1IT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzM4OTUyMTY%3D.7fc1686542c19a1470499959aa1895abc2949652ffe0255e7bd7c5b146ea07ed
+
+  ✓ Playwright: trovati 2 stream(s).
+
+  ✓ Totale unificato: 2 stream(s).
+
+  ⏱ Tempo totale: 14.90s
+
+======================================================================
+RIEPILOGO SYNC
+======================================================================
+! Differenze trovate:
+  [CAMBIATO] https://dlstreams.top/player/stream-877.php → 2 stream
+  [CAMBIATO] https://dlstreams.top/player/stream-870.php → 2 stream
+  [CAMBIATO] https://dlstreams.top/player/stream-461.php → 2 stream
+  [CAMBIATO] https://dlstreams.top/player/stream-576.php → 2 stream
+  [CAMBIATO] https://dlstreams.top/player/stream-575.php → 2 stream
+  [CAMBIATO] https://dlstreams.top/player/stream-577.php → 2 stream
+
+Aggiorno il file su GitHub...
+✓ Push completato.
+======================================================================
+Prossimo ciclo tra 1745s
+[2026-03-19T18:25:22.523831+01:00] Servizio sync avviato.
+[2026-03-19T18:25:22.523867+01:00] Repo: Larus54/hls-sniffer
+[2026-03-19T18:25:22.523876+01:00] File: data/hls_streams.json
+[2026-03-19T18:25:22.523882+01:00] Intervallo: 1800s
+[2026-03-19T18:25:22.523888+01:00] 
+======================================================================
+[2026-03-19T18:25:22.523893+01:00] Inizio sync HLS
+[2026-03-19T18:25:22.523898+01:00] ======================================================================
+[1/6] Scan: https://dlstreams.top/player/stream-877.php
+[2026-03-19 18:25:22] 
+  URL: https://dlstreams.top/player/stream-877.php
+[2026-03-19 18:25:22]   Referer: https://dlstreams.top/
+[2026-03-19 18:25:22] 
+──────────────────────────────────────────────────
+[2026-03-19 18:25:22]   Scan browser (Playwright/Chromium)
+[2026-03-19 18:25:22] ──────────────────────────────────────────────────
+[2026-03-19 18:25:22]   → Avvio Chromium headless...
+[2026-03-19 18:25:22]   → Referer: https://dlstreams.top/
+[2026-03-19 18:25:24]   → Attendo 4.0s per player lenti...
+[2026-03-19 18:25:27]   ★ https://planetary.lovecdn.ru/ZonaDAZN/index.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3Mzk0MTQyNg==.5d60be600ad478880ca5f246147efe420a204d25c5c72247b1b112e14a630478
+[2026-03-19 18:25:27]   ★ https://planetary.lovecdn.ru/ZonaDAZN/tracks-v1a1/mono.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3Mzk0MTQyNg%3D%3D.5d60be600ad478880ca5f246147efe420a204d25c5c72247b1b112e14a630478
+[2026-03-19 18:25:28] 
+  ✓ Playwright: trovati 2 stream(s).
+[2026-03-19 18:25:28] 
+  ✓ Totale unificato: 2 stream(s).
+[2026-03-19 18:25:28] 
+  ⏱ Tempo totale: 5.97s
+[2/6] Scan: https://dlstreams.top/player/stream-870.php
+[2026-03-19 18:25:28] 
+  URL: https://dlstreams.top/player/stream-870.php
+[2026-03-19 18:25:28]   Referer: https://dlstreams.top/
+[2026-03-19 18:25:28] 
+──────────────────────────────────────────────────
+[2026-03-19 18:25:28]   Scan browser (Playwright/Chromium)
+[2026-03-19 18:25:28] ──────────────────────────────────────────────────
+[2026-03-19 18:25:28]   → Avvio Chromium headless...
+[2026-03-19 18:25:28]   → Referer: https://dlstreams.top/
+[2026-03-19 18:25:34]   → Attendo 4.0s per player lenti...
+[2026-03-19 18:25:37]   ★ https://planetary.lovecdn.ru/SkySportCalcioIT/index.m3u8?token=U2t5U3BvcnRDYWxjaW9JVHxub19jaGVja19pcHwxNzczOTQxNDM2.eefb602551ac82c77e3c20ce5d81a7380b0b1a7c044a096a6f5401b5feb2bd18
+[2026-03-19 18:25:38] 
+  ✓ Playwright: trovati 1 stream(s).
+[2026-03-19 18:25:38] 
+  ✓ Totale unificato: 1 stream(s).
+[2026-03-19 18:25:38] 
+  ⏱ Tempo totale: 9.59s
+[3/6] Scan: https://dlstreams.top/player/stream-461.php
+[2026-03-19 18:25:38] 
+  URL: https://dlstreams.top/player/stream-461.php
+[2026-03-19 18:25:38]   Referer: https://dlstreams.top/
+[2026-03-19 18:25:38] 
+──────────────────────────────────────────────────
+[2026-03-19 18:25:38]   Scan browser (Playwright/Chromium)
+[2026-03-19 18:25:38] ──────────────────────────────────────────────────
+[2026-03-19 18:25:38]   → Avvio Chromium headless...
+[2026-03-19 18:25:38]   → Referer: https://dlstreams.top/
+[2026-03-19 18:25:39]   → Attendo 4.0s per player lenti...
+[2026-03-19 18:25:42]   ★ https://planetary.lovecdn.ru/SkySportUnoIT/index.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzczOTQxNDQw.9bdafa0ae1010357c376866a0106ad5b165774847561c6965596bc82a1c9a6f9
+[2026-03-19 18:25:42]   ★ https://planetary.lovecdn.ru/SkySportUnoIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzczOTQxNDQw.9bdafa0ae1010357c376866a0106ad5b165774847561c6965596bc82a1c9a6f9
+[2026-03-19 18:25:43] 
+  ✓ Playwright: trovati 2 stream(s).
+[2026-03-19 18:25:43] 
+  ✓ Totale unificato: 2 stream(s).
+[2026-03-19 18:25:43] 
+  ⏱ Tempo totale: 5.54s
+[4/6] Scan: https://dlstreams.top/player/stream-576.php
+[2026-03-19 18:25:43] 
+  URL: https://dlstreams.top/player/stream-576.php
+[2026-03-19 18:25:43]   Referer: https://dlstreams.top/
+[2026-03-19 18:25:43] 
+──────────────────────────────────────────────────
+[2026-03-19 18:25:43]   Scan browser (Playwright/Chromium)
+[2026-03-19 18:25:43] ──────────────────────────────────────────────────
+[2026-03-19 18:25:43]   → Avvio Chromium headless...
+[2026-03-19 18:25:43]   → Referer: https://dlstreams.top/
+[2026-03-19 18:25:44]   → Attendo 4.0s per player lenti...
+[2026-03-19 18:25:47]   ★ https://planetary.lovecdn.ru/SkySportTennisIT/index.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzczOTQxNDQ2.0eb3bcb59a9e670166956765f51607f376f48d1414586b26d639f34ba55d68a1
+[2026-03-19 18:25:47]   ★ https://planetary.lovecdn.ru/SkySportTennisIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzczOTQxNDQ2.0eb3bcb59a9e670166956765f51607f376f48d1414586b26d639f34ba55d68a1
+[2026-03-19 18:25:49] 
+  ✓ Playwright: trovati 2 stream(s).
+[2026-03-19 18:25:49] 
+  ✓ Totale unificato: 2 stream(s).
+[2026-03-19 18:25:49] 
+  ⏱ Tempo totale: 5.47s
+[5/6] Scan: https://dlstreams.top/player/stream-575.php
+[2026-03-19 18:25:49] 
+  URL: https://dlstreams.top/player/stream-575.php
+[2026-03-19 18:25:49]   Referer: https://dlstreams.top/
+[2026-03-19 18:25:49] 
+──────────────────────────────────────────────────
+[2026-03-19 18:25:49]   Scan browser (Playwright/Chromium)
+[2026-03-19 18:25:49] ──────────────────────────────────────────────────
+[2026-03-19 18:25:49]   → Avvio Chromium headless...
+[2026-03-19 18:25:49]   → Referer: https://dlstreams.top/
+[2026-03-19 18:25:50]   → Attendo 4.0s per player lenti...
+[2026-03-19 18:25:52]   ★ https://planetary.lovecdn.ru/SkySportMotoGPIT/index.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzczOTQxNDUx.068eba11ab0186e25b70eba645a5ff1c302acc971b995f778dfd449d039180c0
+[2026-03-19 18:25:52]   ★ https://planetary.lovecdn.ru/SkySportMotoGPIT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzczOTQxNDUx.068eba11ab0186e25b70eba645a5ff1c302acc971b995f778dfd449d039180c0
+[2026-03-19 18:25:54] 
+  ✓ Playwright: trovati 2 stream(s).
+[2026-03-19 18:25:54] 
+  ✓ Totale unificato: 2 stream(s).
+[2026-03-19 18:25:54] 
+  ⏱ Tempo totale: 5.57s
+[6/6] Scan: https://dlstreams.top/player/stream-577.php
+[2026-03-19 18:25:54] 
+  URL: https://dlstreams.top/player/stream-577.php
+[2026-03-19 18:25:54]   Referer: https://dlstreams.top/
+[2026-03-19 18:25:54] 
+──────────────────────────────────────────────────
+[2026-03-19 18:25:54]   Scan browser (Playwright/Chromium)
+[2026-03-19 18:25:54] ──────────────────────────────────────────────────
+[2026-03-19 18:25:54]   → Avvio Chromium headless...
+[2026-03-19 18:25:54]   → Referer: https://dlstreams.top/
+[2026-03-19 18:25:55]   → Attendo 4.0s per player lenti...
+[2026-03-19 18:25:58]   ★ https://planetary.lovecdn.ru/SkySportF1IT/index.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzM5NDE0NTc=.fca863f74cae699ae028676c5305cd1a1cb78e6c06aaf674d8a833936f124f77
+[2026-03-19 18:25:58]   ★ https://planetary.lovecdn.ru/SkySportF1IT/tracks-v1a1/mono.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzM5NDE0NTc%3D.fca863f74cae699ae028676c5305cd1a1cb78e6c06aaf674d8a833936f124f77
+[2026-03-19 18:26:00] 
+  ✓ Playwright: trovati 2 stream(s).
+[2026-03-19 18:26:00] 
+  ✓ Totale unificato: 2 stream(s).
+[2026-03-19 18:26:00] 
+  ⏱ Tempo totale: 5.44s
+[2026-03-19T18:26:00.660487+01:00] 
+======================================================================
+[2026-03-19T18:26:00.660663+01:00] RIEPILOGO SYNC
+[2026-03-19T18:26:00.660690+01:00] ======================================================================
+[2026-03-19T18:26:00.660707+01:00] ! Differenze trovate:
+[2026-03-19T18:26:00.660734+01:00]   [CAMBIATO] https://dlstreams.top/player/stream-877.php → 2 stream
+[2026-03-19T18:26:00.660753+01:00]   [CAMBIATO] https://dlstreams.top/player/stream-870.php → 1 stream
+[2026-03-19T18:26:00.660768+01:00]   [CAMBIATO] https://dlstreams.top/player/stream-461.php → 2 stream
+[2026-03-19T18:26:00.660782+01:00]   [CAMBIATO] https://dlstreams.top/player/stream-576.php → 2 stream
+[2026-03-19T18:26:00.660797+01:00]   [CAMBIATO] https://dlstreams.top/player/stream-575.php → 2 stream
+[2026-03-19T18:26:00.660812+01:00]   [CAMBIATO] https://dlstreams.top/player/stream-577.php → 2 stream
+[2026-03-19T18:26:00.660825+01:00] 
+Aggiorno il file su GitHub...
+[2026-03-19T18:26:01.541249+01:00] ✓ Push completato.
+[2026-03-19T18:26:01.541417+01:00] ======================================================================
+[2026-03-19T18:26:01.541457+01:00] Prossimo ciclo tra 1761s
+[2026-03-19T18:27:00.715028+01:00] Servizio sync avviato.
+[2026-03-19T18:27:00.715070+01:00] Repo: Larus54/hls-sniffer
+[2026-03-19T18:27:00.715081+01:00] File: data/hls_streams.json
+[2026-03-19T18:27:00.715088+01:00] Intervallo: 1800s
+[2026-03-19T18:27:00.715095+01:00] 
+======================================================================
+[2026-03-19T18:27:00.715101+01:00] Inizio sync HLS
+[2026-03-19T18:27:00.715107+01:00] ======================================================================
+[2026-03-19T18:27:00.715272+01:00] [1/6] Scan: https://dlstreams.top/player/stream-877.php
+[2026-03-19 18:27:00] 
+  URL: https://dlstreams.top/player/stream-877.php
+[2026-03-19 18:27:00]   Referer: https://dlstreams.top/
+[2026-03-19 18:27:00] 
+──────────────────────────────────────────────────
+[2026-03-19 18:27:00]   Scan browser (Playwright/Chromium)
+[2026-03-19 18:27:00] ──────────────────────────────────────────────────
+[2026-03-19 18:27:00]   → Avvio Chromium headless...
+[2026-03-19 18:27:00]   → Referer: https://dlstreams.top/
+[2026-03-19 18:27:02]   → Attendo 4.0s per player lenti...
+[2026-03-19 18:27:04]   ★ https://planetary.lovecdn.ru/ZonaDAZN/index.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3Mzk0MTUyMw==.727e59a0191e3eee3493e59b2a013d8666d90104701699e3d3bafdf7eb9d8a68
+[2026-03-19 18:27:04]   → Manifest index con token trovato durante attesa: passo subito al prossimo target.
+[2026-03-19 18:27:04] 
+  ✓ Playwright: trovati 1 stream(s).
+[2026-03-19 18:27:04] 
+  ✓ Totale unificato: 1 stream(s).
+[2026-03-19 18:27:04] 
+  ⏱ Tempo totale: 3.85s
+[2026-03-19T18:27:04.562459+01:00] [2/6] Scan: https://dlstreams.top/player/stream-870.php
+[2026-03-19 18:27:04] 
+  URL: https://dlstreams.top/player/stream-870.php
+[2026-03-19 18:27:04]   Referer: https://dlstreams.top/
+[2026-03-19 18:27:04] 
+──────────────────────────────────────────────────
+[2026-03-19 18:27:04]   Scan browser (Playwright/Chromium)
+[2026-03-19 18:27:04] ──────────────────────────────────────────────────
+[2026-03-19 18:27:04]   → Avvio Chromium headless...
+[2026-03-19 18:27:04]   → Referer: https://dlstreams.top/
+[2026-03-19 18:27:05]   → Attendo 4.0s per player lenti...
+[2026-03-19 18:27:08]   ★ https://planetary.lovecdn.ru/SkySportCalcioIT/index.m3u8?token=U2t5U3BvcnRDYWxjaW9JVHxub19jaGVja19pcHwxNzczOTQxNTI3.4d28358db4247afd35b34be7efbafbd0cf6ce37527553a24d77cb20a359e7074
+[2026-03-19 18:27:08]   → Manifest index con token trovato durante attesa: passo subito al prossimo target.
+[2026-03-19 18:27:08] 
+  ✓ Playwright: trovati 1 stream(s).
+[2026-03-19 18:27:08] 
+  ✓ Totale unificato: 1 stream(s).
+[2026-03-19 18:27:08] 
+  ⏱ Tempo totale: 3.87s
+[2026-03-19T18:27:08.428297+01:00] [3/6] Scan: https://dlstreams.top/player/stream-461.php
+[2026-03-19 18:27:08] 
+  URL: https://dlstreams.top/player/stream-461.php
+[2026-03-19 18:27:08]   Referer: https://dlstreams.top/
+[2026-03-19 18:27:08] 
+──────────────────────────────────────────────────
+[2026-03-19 18:27:08]   Scan browser (Playwright/Chromium)
+[2026-03-19 18:27:08] ──────────────────────────────────────────────────
+[2026-03-19 18:27:08]   → Avvio Chromium headless...
+[2026-03-19 18:27:08]   → Referer: https://dlstreams.top/
+[2026-03-19 18:27:09]   → Attendo 4.0s per player lenti...
+[2026-03-19 18:27:11]   ★ https://planetary.lovecdn.ru/SkySportUnoIT/index.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzczOTQxNTMx.6c60bd353f1c49c260e4ca2afd5fd72ce25c8883be5bd4a66506d0095122eff3
+[2026-03-19 18:27:12]   → Manifest index con token trovato durante attesa: passo subito al prossimo target.
+[2026-03-19 18:27:12] 
+  ✓ Playwright: trovati 1 stream(s).
+[2026-03-19 18:27:12] 
+  ✓ Totale unificato: 1 stream(s).
+[2026-03-19 18:27:12] 
+  ⏱ Tempo totale: 3.69s
+[2026-03-19T18:27:12.114436+01:00] [4/6] Scan: https://dlstreams.top/player/stream-576.php
+[2026-03-19 18:27:12] 
+  URL: https://dlstreams.top/player/stream-576.php
+[2026-03-19 18:27:12]   Referer: https://dlstreams.top/
+[2026-03-19 18:27:12] 
+──────────────────────────────────────────────────
+[2026-03-19 18:27:12]   Scan browser (Playwright/Chromium)
+[2026-03-19 18:27:12] ──────────────────────────────────────────────────
+[2026-03-19 18:27:12]   → Avvio Chromium headless...
+[2026-03-19 18:27:12]   → Referer: https://dlstreams.top/
+[2026-03-19 18:27:13]   → Attendo 4.0s per player lenti...
+[2026-03-19 18:27:15]   ★ https://planetary.lovecdn.ru/SkySportTennisIT/index.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzczOTQxNTM0.5c3cf56313817e4e1a07fa968ab0711e840cc18fa9c963689be93e6bef408b36
+[2026-03-19 18:27:15]   → Manifest index con token trovato durante attesa: passo subito al prossimo target.
+[2026-03-19 18:27:15] 
+  ✓ Playwright: trovati 1 stream(s).
+[2026-03-19 18:27:15] 
+  ✓ Totale unificato: 1 stream(s).
+[2026-03-19 18:27:15] 
+  ⏱ Tempo totale: 3.72s
+[2026-03-19T18:27:15.829778+01:00] [5/6] Scan: https://dlstreams.top/player/stream-575.php
+[2026-03-19 18:27:15] 
+  URL: https://dlstreams.top/player/stream-575.php
+[2026-03-19 18:27:15]   Referer: https://dlstreams.top/
+[2026-03-19 18:27:15] 
+──────────────────────────────────────────────────
+[2026-03-19 18:27:15]   Scan browser (Playwright/Chromium)
+[2026-03-19 18:27:15] ──────────────────────────────────────────────────
+[2026-03-19 18:27:15]   → Avvio Chromium headless...
+[2026-03-19 18:27:15]   → Referer: https://dlstreams.top/
+[2026-03-19 18:27:17]   → Attendo 4.0s per player lenti...
+[2026-03-19 18:27:19]   ★ https://planetary.lovecdn.ru/SkySportMotoGPIT/index.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzczOTQxNTM4.d93bad1f0a5081cc424105991afa4917db9bba58bae20c142bf05780d356c17e
+[2026-03-19 18:27:19]   → Manifest index con token trovato durante attesa: passo subito al prossimo target.
+[2026-03-19 18:27:19] 
+  ✓ Playwright: trovati 1 stream(s).
+[2026-03-19 18:27:19] 
+  ✓ Totale unificato: 1 stream(s).
+[2026-03-19 18:27:19] 
+  ⏱ Tempo totale: 4.12s
+[2026-03-19T18:27:19.953480+01:00] [6/6] Scan: https://dlstreams.top/player/stream-577.php
+[2026-03-19 18:27:19] 
+  URL: https://dlstreams.top/player/stream-577.php
+[2026-03-19 18:27:19]   Referer: https://dlstreams.top/
+[2026-03-19 18:27:19] 
+──────────────────────────────────────────────────
+[2026-03-19 18:27:19]   Scan browser (Playwright/Chromium)
+[2026-03-19 18:27:19] ──────────────────────────────────────────────────
+[2026-03-19 18:27:19]   → Avvio Chromium headless...
+[2026-03-19 18:27:19]   → Referer: https://dlstreams.top/
+[2026-03-19 18:27:21]   → Attendo 4.0s per player lenti...
+[2026-03-19 18:27:24]   ★ https://planetary.lovecdn.ru/SkySportF1IT/index.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzM5NDE1NDM=.d2013e49c6e91e96ca997e70a7a2580da068fe51de79e083947ed0f58b769131
+[2026-03-19 18:27:24]   → Manifest index con token trovato durante attesa: passo subito al prossimo target.
+[2026-03-19 18:27:24] 
+  ✓ Playwright: trovati 1 stream(s).
+[2026-03-19 18:27:24] 
+  ✓ Totale unificato: 1 stream(s).
+[2026-03-19 18:27:24] 
+  ⏱ Tempo totale: 5.02s
+[2026-03-19T18:27:25.620696+01:00] 
+======================================================================
+[2026-03-19T18:27:25.620835+01:00] RIEPILOGO SYNC
+[2026-03-19T18:27:25.620866+01:00] ======================================================================
+[2026-03-19T18:27:25.620883+01:00] ! Differenze trovate:
+[2026-03-19T18:27:25.620915+01:00]   [CAMBIATO] https://dlstreams.top/player/stream-877.php → 1 stream
+[2026-03-19T18:27:25.620940+01:00]   [CAMBIATO] https://dlstreams.top/player/stream-870.php → 1 stream
+[2026-03-19T18:27:25.620956+01:00]   [CAMBIATO] https://dlstreams.top/player/stream-461.php → 1 stream
+[2026-03-19T18:27:25.620973+01:00]   [CAMBIATO] https://dlstreams.top/player/stream-576.php → 1 stream
+[2026-03-19T18:27:25.620993+01:00]   [CAMBIATO] https://dlstreams.top/player/stream-575.php → 1 stream
+[2026-03-19T18:27:25.621008+01:00]   [CAMBIATO] https://dlstreams.top/player/stream-577.php → 1 stream
+[2026-03-19T18:27:25.621021+01:00] 
+Aggiorno il file su GitHub...
+[2026-03-19T18:27:26.371532+01:00] ✓ Push completato.
+[2026-03-19T18:27:26.371697+01:00] ======================================================================
+[2026-03-19T18:27:26.371759+01:00] Prossimo ciclo tra 1775s
+[2026-03-19T19:14:44.309164+01:00] 
+======================================================================
+[2026-03-19T19:14:44.310297+01:00] Inizio sync HLS
+[2026-03-19T19:14:44.310364+01:00] ======================================================================
+[2026-03-19T19:14:44.311330+01:00] [1/6] Scan: https://dlstreams.top/player/stream-877.php
+[2026-03-19 19:14:44] 
+  URL: https://dlstreams.top/player/stream-877.php
+[2026-03-19 19:14:44]   Referer: https://dlstreams.top/
+[2026-03-19 19:14:44] 
+──────────────────────────────────────────────────
+[2026-03-19 19:14:44]   Scan browser (Playwright/Chromium)
+[2026-03-19 19:14:44] ──────────────────────────────────────────────────
+[2026-03-19 19:14:44]   → Avvio Chromium headless...
+[2026-03-19 19:14:44]   → Referer: https://dlstreams.top/
+[2026-03-19 19:14:46]   → Attendo 4.0s per player lenti...
+[2026-03-19 19:14:48]   ★ https://planetary.lovecdn.ru/ZonaDAZN/index.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3Mzk0NDM4OA==.fa841dcb443498ec9d97c4e1c6d54a783da29ca6a85685a1ae3be2d683d7558f
+[2026-03-19 19:14:48]   → Manifest index con token trovato durante attesa: passo subito al prossimo target.
+[2026-03-19 19:14:48] 
+  ✓ Playwright: trovati 1 stream(s).
+[2026-03-19 19:14:48] 
+  ✓ Totale unificato: 1 stream(s).
+[2026-03-19 19:14:48] 
+  ⏱ Tempo totale: 4.56s
+[2026-03-19T19:14:48.868456+01:00] [2/6] Scan: https://dlstreams.top/player/stream-870.php
+[2026-03-19 19:14:48] 
+  URL: https://dlstreams.top/player/stream-870.php
+[2026-03-19 19:14:48]   Referer: https://dlstreams.top/
+[2026-03-19 19:14:48] 
+──────────────────────────────────────────────────
+[2026-03-19 19:14:48]   Scan browser (Playwright/Chromium)
+[2026-03-19 19:14:48] ──────────────────────────────────────────────────
+[2026-03-19 19:14:48]   → Avvio Chromium headless...
+[2026-03-19 19:14:48]   → Referer: https://dlstreams.top/
+[2026-03-19 19:14:50]   → Attendo 4.0s per player lenti...
+[2026-03-19 19:14:52]   ★ https://planetary.lovecdn.ru/SkySportCalcioIT/index.m3u8?token=U2t5U3BvcnRDYWxjaW9JVHxub19jaGVja19pcHwxNzczOTQ0Mzkx.df85d8df452f8b09bbf63f626875929d93114b89ce25cbd37667c61e8e1b9d43
+[2026-03-19 19:14:52]   → Manifest index con token trovato durante attesa: passo subito al prossimo target.
+[2026-03-19 19:14:52] 
+  ✓ Playwright: trovati 1 stream(s).
+[2026-03-19 19:14:52] 
+  ✓ Totale unificato: 1 stream(s).
+[2026-03-19 19:14:52] 
+  ⏱ Tempo totale: 3.69s
+[2026-03-19T19:14:52.554101+01:00] [3/6] Scan: https://dlstreams.top/player/stream-461.php
+[2026-03-19 19:14:52] 
+  URL: https://dlstreams.top/player/stream-461.php
+[2026-03-19 19:14:52]   Referer: https://dlstreams.top/
+[2026-03-19 19:14:52] 
+──────────────────────────────────────────────────
+[2026-03-19 19:14:52]   Scan browser (Playwright/Chromium)
+[2026-03-19 19:14:52] ──────────────────────────────────────────────────
+[2026-03-19 19:14:52]   → Avvio Chromium headless...
+[2026-03-19 19:14:52]   → Referer: https://dlstreams.top/
+[2026-03-19 19:14:53]   → Attendo 4.0s per player lenti...
+[2026-03-19 19:14:55]   ★ https://planetary.lovecdn.ru/SkySportUnoIT/index.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzczOTQ0Mzk1.c1041a0e429d92099811b9b8cb1c64e34704cb73bcdf225eb9defcf7bf173118
+[2026-03-19 19:14:56]   → Manifest index con token trovato durante attesa: passo subito al prossimo target.
+[2026-03-19 19:14:56] 
+  ✓ Playwright: trovati 1 stream(s).
+[2026-03-19 19:14:56] 
+  ✓ Totale unificato: 1 stream(s).
+[2026-03-19 19:14:56] 
+  ⏱ Tempo totale: 3.60s
+[2026-03-19T19:14:56.152287+01:00] [4/6] Scan: https://dlstreams.top/player/stream-576.php
+[2026-03-19 19:14:56] 
+  URL: https://dlstreams.top/player/stream-576.php
+[2026-03-19 19:14:56]   Referer: https://dlstreams.top/
+[2026-03-19 19:14:56] 
+──────────────────────────────────────────────────
+[2026-03-19 19:14:56]   Scan browser (Playwright/Chromium)
+[2026-03-19 19:14:56] ──────────────────────────────────────────────────
+[2026-03-19 19:14:56]   → Avvio Chromium headless...
+[2026-03-19 19:14:56]   → Referer: https://dlstreams.top/
+[2026-03-19 19:14:57]   → Attendo 4.0s per player lenti...
+[2026-03-19 19:14:59]   ★ https://planetary.lovecdn.ru/SkySportTennisIT/index.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzczOTQ0Mzk4.d4baab7f973b51e113e895a9c0892f6996d5633524861164500c70b9b62eb4b4
+[2026-03-19 19:14:59]   → Manifest index con token trovato durante attesa: passo subito al prossimo target.
+[2026-03-19 19:14:59] 
+  ✓ Playwright: trovati 1 stream(s).
+[2026-03-19 19:14:59] 
+  ✓ Totale unificato: 1 stream(s).
+[2026-03-19 19:14:59] 
+  ⏱ Tempo totale: 3.60s
+[2026-03-19T19:14:59.752810+01:00] [5/6] Scan: https://dlstreams.top/player/stream-575.php
+[2026-03-19 19:14:59] 
+  URL: https://dlstreams.top/player/stream-575.php
+[2026-03-19 19:14:59]   Referer: https://dlstreams.top/
+[2026-03-19 19:14:59] 
+──────────────────────────────────────────────────
+[2026-03-19 19:14:59]   Scan browser (Playwright/Chromium)
+[2026-03-19 19:14:59] ──────────────────────────────────────────────────
+[2026-03-19 19:14:59]   → Avvio Chromium headless...
+[2026-03-19 19:14:59]   → Referer: https://dlstreams.top/
+[2026-03-19 19:15:01]   → Attendo 4.0s per player lenti...
+[2026-03-19 19:15:03]   ★ https://planetary.lovecdn.ru/SkySportMotoGPIT/index.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzczOTQ0NDAz.f5cba3ab0f1a12f98538ef718632725843cec96af1d97540bcc703383d21c5b6
+[2026-03-19 19:15:04]   → Manifest index con token trovato durante attesa: passo subito al prossimo target.
+[2026-03-19 19:15:04] 
+  ✓ Playwright: trovati 1 stream(s).
+[2026-03-19 19:15:04] 
+  ✓ Totale unificato: 1 stream(s).
+[2026-03-19 19:15:04] 
+  ⏱ Tempo totale: 4.36s
+[2026-03-19T19:15:04.111385+01:00] [6/6] Scan: https://dlstreams.top/player/stream-577.php
+[2026-03-19 19:15:04] 
+  URL: https://dlstreams.top/player/stream-577.php
+[2026-03-19 19:15:04]   Referer: https://dlstreams.top/
+[2026-03-19 19:15:04] 
+──────────────────────────────────────────────────
+[2026-03-19 19:15:04]   Scan browser (Playwright/Chromium)
+[2026-03-19 19:15:04] ──────────────────────────────────────────────────
+[2026-03-19 19:15:04]   → Avvio Chromium headless...
+[2026-03-19 19:15:04]   → Referer: https://dlstreams.top/
+[2026-03-19 19:15:05]   → Attendo 4.0s per player lenti...
+[2026-03-19 19:15:07]   ★ https://planetary.lovecdn.ru/SkySportF1IT/index.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzM5NDQ0MDY=.99b6c7e63f14cc86ec10dbfc80875ff32874d53343081c7294cd0acdcf0b885c
+[2026-03-19 19:15:07]   → Manifest index con token trovato durante attesa: passo subito al prossimo target.
+[2026-03-19 19:15:07] 
+  ✓ Playwright: trovati 1 stream(s).
+[2026-03-19 19:15:07] 
+  ✓ Totale unificato: 1 stream(s).
+[2026-03-19 19:15:07] 
+  ⏱ Tempo totale: 3.70s
+[2026-03-19T19:15:08.242795+01:00] 
+======================================================================
+[2026-03-19T19:15:08.243030+01:00] RIEPILOGO SYNC
+[2026-03-19T19:15:08.243069+01:00] ======================================================================
+[2026-03-19T19:15:08.243114+01:00] ! Differenze trovate:
+[2026-03-19T19:15:08.243170+01:00]   [CAMBIATO] https://dlstreams.top/player/stream-877.php → 1 stream
+[2026-03-19T19:15:08.243211+01:00]   [CAMBIATO] https://dlstreams.top/player/stream-870.php → 1 stream
+[2026-03-19T19:15:08.243245+01:00]   [CAMBIATO] https://dlstreams.top/player/stream-461.php → 1 stream
+[2026-03-19T19:15:08.243278+01:00]   [CAMBIATO] https://dlstreams.top/player/stream-576.php → 1 stream
+[2026-03-19T19:15:08.243312+01:00]   [CAMBIATO] https://dlstreams.top/player/stream-575.php → 1 stream
+[2026-03-19T19:15:08.243344+01:00]   [CAMBIATO] https://dlstreams.top/player/stream-577.php → 1 stream
+[2026-03-19T19:15:08.243374+01:00] 
+Aggiorno il file su GitHub...
+[2026-03-19T19:15:09.035369+01:00] ✓ Push completato.
+[2026-03-19T19:15:09.035545+01:00] ======================================================================
+[2026-03-19T19:15:09.035612+01:00] Prossimo ciclo tra 1776s
+[2026-03-19T19:35:37.832093+01:00] Servizio sync avviato.
+[2026-03-19T19:35:37.832125+01:00] Repo: Larus54/hls-sniffer
+[2026-03-19T19:35:37.832134+01:00] File: data/hls_streams.json
+[2026-03-19T19:35:37.832140+01:00] Intervallo: 600s
+[2026-03-19T19:35:37.832146+01:00] 
+======================================================================
+[2026-03-19T19:35:37.832151+01:00] Inizio sync HLS
+[2026-03-19T19:35:37.832155+01:00] ======================================================================
+[2026-03-19T19:35:37.832342+01:00] [1/6] Scan: https://dlstreams.top/player/stream-877.php
+[2026-03-19 19:35:37] 
+  URL: https://dlstreams.top/player/stream-877.php
+[2026-03-19 19:35:37]   Referer: https://dlstreams.top/
+[2026-03-19 19:35:37] 
+──────────────────────────────────────────────────
+[2026-03-19 19:35:37]   Scan browser (Playwright/Chromium)
+[2026-03-19 19:35:37] ──────────────────────────────────────────────────
+[2026-03-19 19:35:37]   → Avvio Chromium headless...
+[2026-03-19 19:35:37]   → Referer: https://dlstreams.top/
+[2026-03-19 19:35:40]   → Attendo 4.0s per player lenti...
+[2026-03-19 19:35:42]   ★ https://planetary.lovecdn.ru/ZonaDAZN/index.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3Mzk0NTY0MQ==.6ee3744e1a6a6a93f683d97697799481feb415a9624cfeaf3caf057ecfddb758
+[2026-03-19 19:35:42]   → Manifest index con token trovato durante attesa: passo subito al prossimo target.
+[2026-03-19 19:35:42] 
+  ✓ Playwright: trovati 1 stream(s).
+[2026-03-19 19:35:42] 
+  ✓ Totale unificato: 1 stream(s).
+[2026-03-19 19:35:42] 
+  ⏱ Tempo totale: 4.76s
+[2026-03-19T19:35:42.594152+01:00] [2/6] Scan: https://dlstreams.top/player/stream-870.php
+[2026-03-19 19:35:42] 
+  URL: https://dlstreams.top/player/stream-870.php
+[2026-03-19 19:35:42]   Referer: https://dlstreams.top/
+[2026-03-19 19:35:42] 
+──────────────────────────────────────────────────
+[2026-03-19 19:35:42]   Scan browser (Playwright/Chromium)
+[2026-03-19 19:35:42] ──────────────────────────────────────────────────
+[2026-03-19 19:35:42]   → Avvio Chromium headless...
+[2026-03-19 19:35:42]   → Referer: https://dlstreams.top/
+[2026-03-19 19:35:43]   → Attendo 4.0s per player lenti...
+[2026-03-19 19:35:45]   ★ https://planetary.lovecdn.ru/SkySportCalcioIT/index.m3u8?token=U2t5U3BvcnRDYWxjaW9JVHxub19jaGVja19pcHwxNzczOTQ1NjQ1.36fc9e5b36b2d552296f118dbc89a3bf1b80cb392bc487015d28a2c3fac8fa7e
+[2026-03-19 19:35:45]   → Manifest index con token trovato durante attesa: passo subito al prossimo target.
+[2026-03-19 19:35:45] 
+  ✓ Playwright: trovati 1 stream(s).
+[2026-03-19 19:35:45] 
+  ✓ Totale unificato: 1 stream(s).
+[2026-03-19 19:35:45] 
+  ⏱ Tempo totale: 3.30s
+[2026-03-19T19:35:45.893313+01:00] [3/6] Scan: https://dlstreams.top/player/stream-461.php
+[2026-03-19 19:35:45] 
+  URL: https://dlstreams.top/player/stream-461.php
+[2026-03-19 19:35:45]   Referer: https://dlstreams.top/
+[2026-03-19 19:35:45] 
+──────────────────────────────────────────────────
+[2026-03-19 19:35:45]   Scan browser (Playwright/Chromium)
+[2026-03-19 19:35:45] ──────────────────────────────────────────────────
+[2026-03-19 19:35:45]   → Avvio Chromium headless...
+[2026-03-19 19:35:45]   → Referer: https://dlstreams.top/
+[2026-03-19 19:35:47]   → Attendo 4.0s per player lenti...
+[2026-03-19 19:35:49]   ★ https://planetary.lovecdn.ru/SkySportUnoIT/index.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzczOTQ1NjQ4.e2b9213e4e02347f5afe36c27239fcd238b93aec06e356d805363640bd13be66
+[2026-03-19 19:35:49]   → Manifest index con token trovato durante attesa: passo subito al prossimo target.
+[2026-03-19 19:35:49] 
+  ✓ Playwright: trovati 1 stream(s).
+[2026-03-19 19:35:49] 
+  ✓ Totale unificato: 1 stream(s).
+[2026-03-19 19:35:49] 
+  ⏱ Tempo totale: 3.59s
+[2026-03-19T19:35:49.486992+01:00] [4/6] Scan: https://dlstreams.top/player/stream-576.php
+[2026-03-19 19:35:49] 
+  URL: https://dlstreams.top/player/stream-576.php
+[2026-03-19 19:35:49]   Referer: https://dlstreams.top/
+[2026-03-19 19:35:49] 
+──────────────────────────────────────────────────
+[2026-03-19 19:35:49]   Scan browser (Playwright/Chromium)
+[2026-03-19 19:35:49] ──────────────────────────────────────────────────
+[2026-03-19 19:35:49]   → Avvio Chromium headless...
+[2026-03-19 19:35:49]   → Referer: https://dlstreams.top/
+[2026-03-19 19:35:50]   → Attendo 4.0s per player lenti...
+[2026-03-19 19:35:53]   ★ https://planetary.lovecdn.ru/SkySportTennisIT/index.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzczOTQ1NjUy.e81d53b047a3dd16e4510df7f329d075483c7537b79caa2a4cac5278015ca874
+[2026-03-19 19:35:53]   → Manifest index con token trovato durante attesa: passo subito al prossimo target.
+[2026-03-19 19:35:53] 
+  ✓ Playwright: trovati 1 stream(s).
+[2026-03-19 19:35:53] 
+  ✓ Totale unificato: 1 stream(s).
+[2026-03-19 19:35:53] 
+  ⏱ Tempo totale: 3.71s
+[2026-03-19T19:35:53.194719+01:00] [5/6] Scan: https://dlstreams.top/player/stream-575.php
+[2026-03-19 19:35:53] 
+  URL: https://dlstreams.top/player/stream-575.php
+[2026-03-19 19:35:53]   Referer: https://dlstreams.top/
+[2026-03-19 19:35:53] 
+──────────────────────────────────────────────────
+[2026-03-19 19:35:53]   Scan browser (Playwright/Chromium)
+[2026-03-19 19:35:53] ──────────────────────────────────────────────────
+[2026-03-19 19:35:53]   → Avvio Chromium headless...
+[2026-03-19 19:35:53]   → Referer: https://dlstreams.top/
+[2026-03-19 19:35:54]   → Attendo 4.0s per player lenti...
+[2026-03-19 19:35:56]   ★ https://planetary.lovecdn.ru/SkySportMotoGPIT/index.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzczOTQ1NjU1.8b9e17a2ebe61cfe377bbd0de223ead37fc015e0a4ce715e3e18860f33c71f16
+[2026-03-19 19:35:56]   → Manifest index con token trovato durante attesa: passo subito al prossimo target.
+[2026-03-19 19:35:56] 
+  ✓ Playwright: trovati 1 stream(s).
+[2026-03-19 19:35:56] 
+  ✓ Totale unificato: 1 stream(s).
+[2026-03-19 19:35:56] 
+  ⏱ Tempo totale: 3.38s
+[2026-03-19T19:35:56.576186+01:00] [6/6] Scan: https://dlstreams.top/player/stream-577.php
+[2026-03-19 19:35:56] 
+  URL: https://dlstreams.top/player/stream-577.php
+[2026-03-19 19:35:56]   Referer: https://dlstreams.top/
+[2026-03-19 19:35:56] 
+──────────────────────────────────────────────────
+[2026-03-19 19:35:56]   Scan browser (Playwright/Chromium)
+[2026-03-19 19:35:56] ──────────────────────────────────────────────────
+[2026-03-19 19:35:56]   → Avvio Chromium headless...
+[2026-03-19 19:35:56]   → Referer: https://dlstreams.top/
+[2026-03-19 19:35:57]   → Attendo 4.0s per player lenti...
+[2026-03-19 19:36:00]   ★ https://planetary.lovecdn.ru/SkySportF1IT/index.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzM5NDU2NTk=.ac49adb1db3c6bdb56f331bde2a719a0bee30ab778aee9d7cf04a4144e5dab01
+[2026-03-19 19:36:00]   → Manifest index con token trovato durante attesa: passo subito al prossimo target.
+[2026-03-19 19:36:00] 
+  ✓ Playwright: trovati 1 stream(s).
+[2026-03-19 19:36:00] 
+  ✓ Totale unificato: 1 stream(s).
+[2026-03-19 19:36:00] 
+  ⏱ Tempo totale: 3.88s
+[2026-03-19T19:36:00.965877+01:00] 
+======================================================================
+[2026-03-19T19:36:00.966098+01:00] RIEPILOGO SYNC
+[2026-03-19T19:36:00.966146+01:00] ======================================================================
+[2026-03-19T19:36:00.966184+01:00] ! Differenze trovate:
+[2026-03-19T19:36:00.966245+01:00]   [CAMBIATO] https://dlstreams.top/player/stream-877.php → 1 stream
+[2026-03-19T19:36:00.966292+01:00]   [CAMBIATO] https://dlstreams.top/player/stream-870.php → 1 stream
+[2026-03-19T19:36:00.966329+01:00]   [CAMBIATO] https://dlstreams.top/player/stream-461.php → 1 stream
+[2026-03-19T19:36:00.966365+01:00]   [CAMBIATO] https://dlstreams.top/player/stream-576.php → 1 stream
+[2026-03-19T19:36:00.966399+01:00]   [CAMBIATO] https://dlstreams.top/player/stream-575.php → 1 stream
+[2026-03-19T19:36:00.966431+01:00]   [CAMBIATO] https://dlstreams.top/player/stream-577.php → 1 stream
+[2026-03-19T19:36:00.966459+01:00] 
+Aggiorno il file su GitHub...
+[2026-03-19T19:36:01.706627+01:00] ✓ Push completato.
+[2026-03-19T19:36:01.706693+01:00] ======================================================================
+[2026-03-19T19:36:01.706722+01:00] Prossimo ciclo tra 577s
+[19/03/2026 19:37:36 CET (+0100)] Servizio sync avviato.
+[19/03/2026 19:37:36 CET (+0100)] Repo: Larus54/hls-sniffer
+[19/03/2026 19:37:36 CET (+0100)] File: data/hls_streams.json
+[19/03/2026 19:37:36 CET (+0100)] Intervallo: 600s
+[19/03/2026 19:37:36 CET (+0100)] 
+======================================================================
+[19/03/2026 19:37:36 CET (+0100)] Inizio sync HLS
+[19/03/2026 19:37:36 CET (+0100)] ======================================================================
+[19/03/2026 19:37:36 CET (+0100)] [1/6] Scan: https://dlstreams.top/player/stream-877.php
+[19/03/2026 19:37:36 CET (+0100)] 
+  URL: https://dlstreams.top/player/stream-877.php
+[19/03/2026 19:37:36 CET (+0100)]   Referer: https://dlstreams.top/
+[19/03/2026 19:37:36 CET (+0100)] 
+──────────────────────────────────────────────────
+[19/03/2026 19:37:36 CET (+0100)]   Scan browser (Playwright/Chromium)
+[19/03/2026 19:37:36 CET (+0100)] ──────────────────────────────────────────────────
+[19/03/2026 19:37:36 CET (+0100)]   → Avvio Chromium headless...
+[19/03/2026 19:37:36 CET (+0100)]   → Referer: https://dlstreams.top/
+[19/03/2026 19:37:38 CET (+0100)]   → Attendo 4.0s per player lenti...
+[19/03/2026 19:37:41 CET (+0100)]   ★ https://planetary.lovecdn.ru/ZonaDAZN/index.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3Mzk0NTc2MA==.115a13fbfffb9812d68fdff00408d75ac7c8c51fae022a25d74316c9e3be88e1
+[19/03/2026 19:37:41 CET (+0100)]   → Manifest index con token trovato durante attesa: passo subito al prossimo target.
+[19/03/2026 19:37:41 CET (+0100)] 
+  ✓ Playwright: trovati 1 stream(s).
+[19/03/2026 19:37:41 CET (+0100)] 
+  ✓ Totale unificato: 1 stream(s).
+[19/03/2026 19:37:41 CET (+0100)] 
+  ⏱ Tempo totale: 4.53s
+[19/03/2026 19:37:41 CET (+0100)] [2/6] Scan: https://dlstreams.top/player/stream-870.php
+[19/03/2026 19:37:41 CET (+0100)] 
+  URL: https://dlstreams.top/player/stream-870.php
+[19/03/2026 19:37:41 CET (+0100)]   Referer: https://dlstreams.top/
+[19/03/2026 19:37:41 CET (+0100)] 
+──────────────────────────────────────────────────
+[19/03/2026 19:37:41 CET (+0100)]   Scan browser (Playwright/Chromium)
+[19/03/2026 19:37:41 CET (+0100)] ──────────────────────────────────────────────────
+[19/03/2026 19:37:41 CET (+0100)]   → Avvio Chromium headless...
+[19/03/2026 19:37:41 CET (+0100)]   → Referer: https://dlstreams.top/
+[19/03/2026 19:37:42 CET (+0100)]   → Attendo 4.0s per player lenti...
+[19/03/2026 19:37:44 CET (+0100)]   ★ https://planetary.lovecdn.ru/SkySportCalcioIT/index.m3u8?token=U2t5U3BvcnRDYWxjaW9JVHxub19jaGVja19pcHwxNzczOTQ1NzY0.ca27be47af1d58f008776c9736ac43c61cd831e2bc485028501e067a64086645
+[19/03/2026 19:37:45 CET (+0100)]   → Manifest index con token trovato durante attesa: passo subito al prossimo target.
+[19/03/2026 19:37:45 CET (+0100)] 
+  ✓ Playwright: trovati 1 stream(s).
+[19/03/2026 19:37:45 CET (+0100)] 
+  ✓ Totale unificato: 1 stream(s).
+[19/03/2026 19:37:45 CET (+0100)] 
+  ⏱ Tempo totale: 3.73s
+[19/03/2026 19:37:45 CET (+0100)] [3/6] Scan: https://dlstreams.top/player/stream-461.php
+[19/03/2026 19:37:45 CET (+0100)] 
+  URL: https://dlstreams.top/player/stream-461.php
+[19/03/2026 19:37:45 CET (+0100)]   Referer: https://dlstreams.top/
+[19/03/2026 19:37:45 CET (+0100)] 
+──────────────────────────────────────────────────
+[19/03/2026 19:37:45 CET (+0100)]   Scan browser (Playwright/Chromium)
+[19/03/2026 19:37:45 CET (+0100)] ──────────────────────────────────────────────────
+[19/03/2026 19:37:45 CET (+0100)]   → Avvio Chromium headless...
+[19/03/2026 19:37:45 CET (+0100)]   → Referer: https://dlstreams.top/
+[19/03/2026 19:37:46 CET (+0100)]   → Attendo 4.0s per player lenti...
+[19/03/2026 19:37:48 CET (+0100)]   ★ https://planetary.lovecdn.ru/SkySportUnoIT/index.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzczOTQ1NzY4.a3dede188c712338028cb8f89b791c8c1eeaacebbc6586e286e2fd6b382de98e
+[19/03/2026 19:37:48 CET (+0100)]   → Manifest index con token trovato durante attesa: passo subito al prossimo target.
+[19/03/2026 19:37:48 CET (+0100)] 
+  ✓ Playwright: trovati 1 stream(s).
+[19/03/2026 19:37:48 CET (+0100)] 
+  ✓ Totale unificato: 1 stream(s).
+[19/03/2026 19:37:48 CET (+0100)] 
+  ⏱ Tempo totale: 3.71s
+[19/03/2026 19:37:48 CET (+0100)] [4/6] Scan: https://dlstreams.top/player/stream-576.php
+[19/03/2026 19:37:48 CET (+0100)] 
+  URL: https://dlstreams.top/player/stream-576.php
+[19/03/2026 19:37:48 CET (+0100)]   Referer: https://dlstreams.top/
+[19/03/2026 19:37:48 CET (+0100)] 
+──────────────────────────────────────────────────
+[19/03/2026 19:37:48 CET (+0100)]   Scan browser (Playwright/Chromium)
+[19/03/2026 19:37:48 CET (+0100)] ──────────────────────────────────────────────────
+[19/03/2026 19:37:48 CET (+0100)]   → Avvio Chromium headless...
+[19/03/2026 19:37:48 CET (+0100)]   → Referer: https://dlstreams.top/
+[19/03/2026 19:37:50 CET (+0100)]   → Attendo 4.0s per player lenti...
+[19/03/2026 19:37:53 CET (+0100)]   ★ https://planetary.lovecdn.ru/SkySportTennisIT/index.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzczOTQ1Nzcx.d627e896ed1e61aaaf26af534c49c2b9ecd23cbd80fcb7c5af1b8ffeb755a530
+[19/03/2026 19:37:53 CET (+0100)]   → Manifest index con token trovato durante attesa: passo subito al prossimo target.
+[19/03/2026 19:37:53 CET (+0100)] 
+  ✓ Playwright: trovati 1 stream(s).
+[19/03/2026 19:37:53 CET (+0100)] 
+  ✓ Totale unificato: 1 stream(s).
+[19/03/2026 19:37:53 CET (+0100)] 
+  ⏱ Tempo totale: 4.48s
+[19/03/2026 19:37:53 CET (+0100)] [5/6] Scan: https://dlstreams.top/player/stream-575.php
+[19/03/2026 19:37:53 CET (+0100)] 
+  URL: https://dlstreams.top/player/stream-575.php
+[19/03/2026 19:37:53 CET (+0100)]   Referer: https://dlstreams.top/
+[19/03/2026 19:37:53 CET (+0100)] 
+──────────────────────────────────────────────────
+[19/03/2026 19:37:53 CET (+0100)]   Scan browser (Playwright/Chromium)
+[19/03/2026 19:37:53 CET (+0100)] ──────────────────────────────────────────────────
+[19/03/2026 19:37:53 CET (+0100)]   → Avvio Chromium headless...
+[19/03/2026 19:37:53 CET (+0100)]   → Referer: https://dlstreams.top/
+[19/03/2026 19:37:54 CET (+0100)]   → Attendo 4.0s per player lenti...
+[19/03/2026 19:37:57 CET (+0100)]   ★ https://planetary.lovecdn.ru/SkySportMotoGPIT/index.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzczOTQ1Nzc2.ddabd00b53f6dd3ce54bfa40590cfa7c68ac7299c94462b8393c707b393a832c
+[19/03/2026 19:37:57 CET (+0100)]   → Manifest index con token trovato durante attesa: passo subito al prossimo target.
+[19/03/2026 19:37:57 CET (+0100)] 
+  ✓ Playwright: trovati 1 stream(s).
+[19/03/2026 19:37:57 CET (+0100)] 
+  ✓ Totale unificato: 1 stream(s).
+[19/03/2026 19:37:57 CET (+0100)] 
+  ⏱ Tempo totale: 3.91s
+[19/03/2026 19:37:57 CET (+0100)] [6/6] Scan: https://dlstreams.top/player/stream-577.php
+[19/03/2026 19:37:57 CET (+0100)] 
+  URL: https://dlstreams.top/player/stream-577.php
+[19/03/2026 19:37:57 CET (+0100)]   Referer: https://dlstreams.top/
+[19/03/2026 19:37:57 CET (+0100)] 
+──────────────────────────────────────────────────
+[19/03/2026 19:37:57 CET (+0100)]   Scan browser (Playwright/Chromium)
+[19/03/2026 19:37:57 CET (+0100)] ──────────────────────────────────────────────────
+[19/03/2026 19:37:57 CET (+0100)]   → Avvio Chromium headless...
+[19/03/2026 19:37:57 CET (+0100)]   → Referer: https://dlstreams.top/
+[19/03/2026 19:37:58 CET (+0100)]   → Attendo 4.0s per player lenti...
+[19/03/2026 19:38:00 CET (+0100)]   ★ https://planetary.lovecdn.ru/SkySportF1IT/index.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3NzM5NDU3Nzk=.962987b1c36d234b477164ddc564dca02eb790c2a4fa5b38f0831d70ee1b1de2
+[19/03/2026 19:38:00 CET (+0100)]   → Manifest index con token trovato durante attesa: passo subito al prossimo target.
+[19/03/2026 19:38:00 CET (+0100)] 
+  ✓ Playwright: trovati 1 stream(s).
+[19/03/2026 19:38:00 CET (+0100)] 
+  ✓ Totale unificato: 1 stream(s).
+[19/03/2026 19:38:00 CET (+0100)] 
+  ⏱ Tempo totale: 3.38s
+[19/03/2026 19:38:01 CET (+0100)] 
+======================================================================
+[19/03/2026 19:38:01 CET (+0100)] RIEPILOGO SYNC
+[19/03/2026 19:38:01 CET (+0100)] ======================================================================
+[19/03/2026 19:38:01 CET (+0100)] ! Differenze trovate:
+[19/03/2026 19:38:01 CET (+0100)]   [CAMBIATO] https://dlstreams.top/player/stream-877.php → 1 stream
+[19/03/2026 19:38:01 CET (+0100)]   [CAMBIATO] https://dlstreams.top/player/stream-870.php → 1 stream
+[19/03/2026 19:38:01 CET (+0100)]   [CAMBIATO] https://dlstreams.top/player/stream-461.php → 1 stream
+[19/03/2026 19:38:01 CET (+0100)]   [CAMBIATO] https://dlstreams.top/player/stream-576.php → 1 stream
+[19/03/2026 19:38:01 CET (+0100)]   [CAMBIATO] https://dlstreams.top/player/stream-575.php → 1 stream
+[19/03/2026 19:38:01 CET (+0100)]   [CAMBIATO] https://dlstreams.top/player/stream-577.php → 1 stream
+[19/03/2026 19:38:01 CET (+0100)] 
+Aggiorno il file su GitHub...
+[19/03/2026 19:38:01 CET (+0100)] ✓ Push completato.
+[19/03/2026 19:38:01 CET (+0100)] ======================================================================
+[19/03/2026 19:38:01 CET (+0100)] Prossimo ciclo tra 576s
