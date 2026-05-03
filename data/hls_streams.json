@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-05-03T17:40:07.139597+02:00",
+  "generated_at": "2026-05-03T17:43:52.352102+02:00",
   "total_sources": 6,
   "results": [
     {
       "source_url": "https://dlstreams.top/player/stream-877.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 7.44,
+      "duration_seconds": 7.43,
       "streams_count": 1,
       "streams": [
         {
-          "url": "https://deviantart.lovetier.bz/ZonaDAZN/index.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3NzgyMzA3Ng==.e145b4978471eaaeb5d2c78e1da10eeea3fd29fad245fcd4e844b406165fdb07",
+          "url": "https://deviantart.lovetier.bz/ZonaDAZN/index.m3u8?token=Wm9uYURBWk58bm9fY2hlY2tfaXB8MTc3NzgyMzI3Nw==.b9c3350e3b70ce62042363172ac733c7b19d640baa9a23bc88ce629987292139",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
@@ -21,26 +21,19 @@
       "source_url": "https://dlstreams.top/player/stream-870.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 5.62,
-      "streams_count": 1,
-      "streams": [
-        {
-          "url": "https://deviantart.lovetier.bz/SkySportCalcioIT/index.m3u8?token=U2t5U3BvcnRDYWxjaW9JVHxub19jaGVja19pcHwxNzc3ODIzMDgy.9291ed12c66e7d04e4ba2d061c42c425e2dea999d7b6ba9338eea37f57294b86",
-          "referer": "https://lovetier.bz/",
-          "origin": "https://lovetier.bz",
-          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
-        }
-      ]
+      "duration_seconds": 10.88,
+      "streams_count": 0,
+      "streams": []
     },
     {
       "source_url": "https://dlstreams.top/player/stream-461.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 6.64,
+      "duration_seconds": 6.1,
       "streams_count": 1,
       "streams": [
         {
-          "url": "https://deviantart.lovetier.bz/SkySportUnoIT/index.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzc3ODIzMDg4.84577bec27a5a071eb4e074f2a12f0c52fa392ce74a65805df9720108946e970",
+          "url": "https://deviantart.lovetier.bz/SkySportUnoIT/index.m3u8?token=U2t5U3BvcnRVbm9JVHxub19jaGVja19pcHwxNzc3ODIzMjk0.1b1b8205294137d3590eb83cc9ba152ea03ea03c0ca240da95b9e011f114b878",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
@@ -51,11 +44,11 @@
       "source_url": "https://dlstreams.top/player/stream-576.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 6.83,
+      "duration_seconds": 7.69,
       "streams_count": 1,
       "streams": [
         {
-          "url": "https://deviantart.lovetier.bz/SkySportTennisIT/index.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzc3ODIzMDk1.a5a4d56ac5bcf93f660d392ae915e5772d6148ff868d3589659646e9062e49aa",
+          "url": "https://deviantart.lovetier.bz/SkySportTennisIT/index.m3u8?token=U2t5U3BvcnRUZW5uaXNJVHxub19jaGVja19pcHwxNzc3ODIzMzAw.02d7087358f9d8091315485b68595ce892a2f209e786fc197afed45b68669d8d",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
@@ -66,11 +59,11 @@
       "source_url": "https://dlstreams.top/player/stream-575.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 6.44,
+      "duration_seconds": 24.35,
       "streams_count": 1,
       "streams": [
         {
-          "url": "https://deviantart.lovetier.bz/SkySportMotoGPIT/index.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzc3ODIzMTAy.c4c854d2a27d44de283b5e009bc9928e53fe02b4cca1a38c429c0930dcc67262",
+          "url": "https://deviantart.lovetier.bz/SkySportMotoGPIT/index.m3u8?token=U2t5U3BvcnRNb3RvR1BJVHxub19jaGVja19pcHwxNzc3ODIzMzI1.136f97e06721f256400a6d9a8f871d2646e13aba4164bd22a08dd02654f23381",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
@@ -81,11 +74,11 @@
       "source_url": "https://dlstreams.top/player/stream-577.php",
       "source_referer": "https://dlstreams.top/",
       "status": "ok",
-      "duration_seconds": 5.67,
+      "duration_seconds": 6.89,
       "streams_count": 1,
       "streams": [
         {
-          "url": "https://deviantart.lovetier.bz/SkySportF1IT/index.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3Nzc4MjMxMDc=.3785e7933c35111d1302ed99dfa342ac06c8be51051c5c49ac884b3bf952110c",
+          "url": "https://deviantart.lovetier.bz/SkySportF1IT/index.m3u8?token=U2t5U3BvcnRGMUlUfG5vX2NoZWNrX2lwfDE3Nzc4MjMzMzM=.0374f974543cd88e888710f160469fb6a19f282830a19962ba7b7e407768dac8",
           "referer": "https://lovetier.bz/",
           "origin": "https://lovetier.bz",
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
