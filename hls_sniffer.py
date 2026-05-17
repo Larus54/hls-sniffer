@@ -121,6 +121,11 @@ def _looks_like_hls_url(url):
     return '.m3u8' in lowered or 'm3u8' in lowered
 
 
+def _page_looks_blocked(content):
+    lowered = content.lower()
+    return any(marker in lowered for marker in BLOCKED_PAGE_MARKERS)
+
+
 def _is_priority_index_token_url(url):
     lowered = unquote(url.lower())
     return '/index.m3u8' in lowered and 'token=' in lowered
@@ -139,6 +144,11 @@ SCRIPT_SRC_PATTERN = re.compile(
 IFRAME_SRC_PATTERN = re.compile(
     r'<iframe[^>]+src=["\']([^"\']+)["\']',
     re.IGNORECASE
+)
+
+BLOCKED_PAGE_MARKERS = (
+    'direct access blocked',
+    'place iframe embed code on your website',
 )
 
 
@@ -342,6 +352,35 @@ def sniff_with_playwright(url, referrer=None, include_metadata=False):
 
         page.route('**/*', route_handler)
 
+        def load_direct_target():
+            try:
+                page.goto(url, wait_until='domcontentloaded', timeout=GOTO_TIMEOUT_MS, referer=referrer)
+            except Exception:
+                pass  # timeout goto — continua comunque
+
+        def load_target_in_iframe():
+            try:
+                page.goto(referrer, wait_until='domcontentloaded', timeout=GOTO_TIMEOUT_MS)
+            except Exception:
+                pass
+
+            iframe_html = f"""
+                <html>
+                  <body style="margin:0;background:#000;overflow:hidden;">
+                    <iframe
+                      src="{url}"
+                      style="border:0;width:100vw;height:100vh;"
+                      allowfullscreen
+                    ></iframe>
+                  </body>
+                </html>
+            """
+
+            try:
+                page.set_content(iframe_html, wait_until='domcontentloaded', timeout=GOTO_TIMEOUT_MS)
+            except Exception:
+                pass
+
         def on_request(req):
             nonlocal should_stop_early
             if _is_http_url(req.url) and _looks_like_hls_url(req.url):
@@ -392,11 +431,16 @@ def sniff_with_playwright(url, referrer=None, include_metadata=False):
         page.on('request', on_request)
         page.on('response', on_response)
 
+        # Prima proviamo la navigazione diretta.
+        load_direct_target()
+
+        # Se il player risponde con la pagina di blocco, replica il contesto embed.
         try:
-            # domcontentloaded evita attese lunghe su pagine che continuano a fare polling.
-            page.goto(url, wait_until='domcontentloaded', timeout=GOTO_TIMEOUT_MS, referer=referrer)
+            if _page_looks_blocked(page.content()):
+                _log('  → Pagina bloccata rilevata: provo il caricamento dentro iframe.')
+                load_target_in_iframe()
         except Exception:
-            pass  # timeout goto — continua comunque
+            pass
 
         # Se abbiamo gia trovato index.m3u8?token=... passiamo subito al target successivo.
         if should_stop_early:

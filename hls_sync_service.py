@@ -13,17 +13,30 @@ Workflow:
 import base64
 import json
 import os
+import re
 import time
 from dataclasses import dataclass
 from datetime import datetime
 from typing import Any, Dict, List, Optional, Tuple
+from urllib.parse import urljoin, urlparse
 
 import requests
 
 from hls_sniffer import sniff
 
+try:
+    from playwright.sync_api import sync_playwright
+    PLAYWRIGHT_AVAILABLE = True
+except ImportError:
+    PLAYWRIGHT_AVAILABLE = False
+
 GITHUB_API_BASE = "https://api.github.com"
 DEFAULT_INTERVAL_SECONDS = 10 * 60
+
+IFRAME_SRC_PATTERN = re.compile(
+    r'<iframe[^>]+src=["\']([^"\']+)["\']',
+    re.IGNORECASE,
+)
 
 
 @dataclass
@@ -130,6 +143,7 @@ def _load_targets(path: str) -> List[Dict[str, Any]]:
                 {
                     "url": item["url"],
                     "referer": item.get("referer"),
+                    "player_index": item.get("player_index"),
                 }
             )
             continue
@@ -139,7 +153,100 @@ def _load_targets(path: str) -> List[Dict[str, Any]]:
     return targets
 
 
-def _collect_local_snapshot(targets: List[Dict[str, Any]]) -> Dict[str, Any]:
+def _default_referrer(url: str) -> str:
+    parsed = urlparse(url)
+    return f"{parsed.scheme}://{parsed.netloc}/"
+
+
+def _fetch_html(url: str, referer: Optional[str], request_timeout_seconds: int) -> str:
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/122.0.0.0 Safari/537.36"
+        ),
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "it-IT,it;q=0.9,en-US;q=0.8",
+    }
+    if referer:
+        headers["Referer"] = referer
+
+    resp = requests.get(url, headers=headers, timeout=request_timeout_seconds)
+    resp.raise_for_status()
+    return resp.text
+
+
+def _extract_iframe_urls(html: str, base_url: str) -> List[str]:
+    iframe_urls: List[str] = []
+    for match in IFRAME_SRC_PATTERN.finditer(html):
+        iframe_urls.append(urljoin(base_url, match.group(1)))
+    return iframe_urls
+
+
+def _dedupe_preserve_order(urls: List[str]) -> List[str]:
+    seen = set()
+    deduped: List[str] = []
+    for url in urls:
+        if not url or url in seen:
+            continue
+        seen.add(url)
+        deduped.append(url)
+    return deduped
+
+
+def _resolve_player_url(target_url: str, referer: Optional[str], player_index: Optional[int], request_timeout_seconds: int) -> str:
+    if not player_index or player_index <= 1:
+        return target_url
+
+    request_referer = referer or _default_referrer(target_url)
+
+    try:
+        html = _fetch_html(target_url, request_referer, request_timeout_seconds)
+        iframe_urls = _extract_iframe_urls(html, target_url)
+        if len(iframe_urls) >= player_index:
+            return iframe_urls[player_index - 1]
+    except Exception:
+        pass
+
+    if not PLAYWRIGHT_AVAILABLE:
+        raise ValueError(f"Impossibile risolvere il player {player_index} da {target_url}: Playwright non disponibile")
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
+        try:
+            page.goto(target_url, wait_until="domcontentloaded", timeout=request_timeout_seconds * 1000, referer=request_referer)
+            try:
+                page.wait_for_load_state("networkidle", timeout=min(request_timeout_seconds * 1000, 8000))
+            except Exception:
+                pass
+            try:
+                page.wait_for_timeout(2000)
+            except Exception:
+                pass
+
+            iframe_urls: List[str] = []
+            try:
+                iframe_urls.extend(_extract_iframe_urls(page.content(), target_url))
+            except Exception:
+                pass
+
+            try:
+                frame_urls = [frame.url for frame in page.frames if frame.url and frame.url != target_url]
+                iframe_urls.extend(frame_urls)
+            except Exception:
+                pass
+
+            iframe_urls = _dedupe_preserve_order([urljoin(target_url, iframe_url) for iframe_url in iframe_urls])
+            if len(iframe_urls) >= player_index:
+                return urljoin(target_url, iframe_urls[player_index - 1])
+        finally:
+            browser.close()
+
+    raise ValueError(f"Impossibile risolvere il player {player_index} da {target_url}")
+
+
+def _collect_local_snapshot(targets: List[Dict[str, Any]], request_timeout_seconds: int) -> Dict[str, Any]:
     records: List[Dict[str, Any]] = []
 
     for idx, target in enumerate(targets, start=1):
@@ -147,17 +254,49 @@ def _collect_local_snapshot(targets: List[Dict[str, Any]]) -> Dict[str, Any]:
         referer = target.get("referer")
         if referer:
             referer = str(referer).strip()
+        player_index_raw = target.get("player_index")
+        player_index = None
+        if player_index_raw is not None:
+            try:
+                player_index = int(player_index_raw)
+            except (TypeError, ValueError):
+                player_index = None
 
         _log(f"[{idx}/{len(targets)}] Scan: {url}")
         started_at = time.time()
 
         try:
-            streams, metadata = sniff(
-                url,
-                referrer=referer,
-                skip_requests=True,
-                include_metadata=True,
-            )
+            scan_candidates: List[Tuple[str, Optional[str]]] = []
+            scan_candidates.append((url, referer))
+
+            if player_index and player_index > 1:
+                try:
+                    resolved_url = _resolve_player_url(url, referer, player_index, request_timeout_seconds)
+                    if resolved_url != url:
+                        scan_candidates.append((resolved_url, url))
+                except Exception as exc:
+                    _log(f"  → Fallback player {player_index} non risolto: {exc}")
+
+            streams = set()
+            metadata: Dict[str, Dict[str, Any]] = {}
+            resolved_url = url
+
+            for candidate_url, candidate_referrer in scan_candidates:
+                candidate_streams, candidate_metadata = sniff(
+                    candidate_url,
+                    referrer=candidate_referrer,
+                    skip_requests=True,
+                    include_metadata=True,
+                )
+                if candidate_streams:
+                    streams = candidate_streams
+                    metadata = candidate_metadata
+                    resolved_url = candidate_url
+                    break
+
+                if not streams:
+                    resolved_url = candidate_url
+
             duration_seconds = round(time.time() - started_at, 2)
 
             details = []
@@ -176,6 +315,8 @@ def _collect_local_snapshot(targets: List[Dict[str, Any]]) -> Dict[str, Any]:
                 {
                     "source_url": url,
                     "source_referer": referer,
+                    "resolved_url": resolved_url,
+                    "player_index": player_index,
                     "status": "ok",
                     "duration_seconds": duration_seconds,
                     "streams_count": len(details),
@@ -188,6 +329,8 @@ def _collect_local_snapshot(targets: List[Dict[str, Any]]) -> Dict[str, Any]:
                 {
                     "source_url": url,
                     "source_referer": referer,
+                    "resolved_url": url,
+                    "player_index": player_index,
                     "status": "error",
                     "duration_seconds": duration_seconds,
                     "error": str(exc),
@@ -234,6 +377,15 @@ def _canonical_for_compare(payload: Dict[str, Any]) -> Dict[str, Any]:
 
     canonical["results"] = sorted(canonical["results"], key=lambda r: r.get("source_url") or "")
     return canonical
+
+
+def _count_streams(payload: Dict[str, Any]) -> int:
+    total = 0
+    for row in payload.get("results", []):
+        streams = row.get("streams", [])
+        if isinstance(streams, list):
+            total += len(streams)
+    return total
 
 
 def _github_headers(token: str) -> Dict[str, str]:
@@ -298,16 +450,22 @@ def _run_once(config: Config) -> None:
     _log("=" * 70)
 
     targets = _load_targets(config.monitor_urls_file)
-    local_payload = _collect_local_snapshot(targets)
+    local_payload = _collect_local_snapshot(targets, config.request_timeout_seconds)
 
     remote_payload, remote_sha = _fetch_remote_file(config)
 
     local_cmp = _canonical_for_compare(local_payload)
     remote_cmp = _canonical_for_compare(remote_payload or {"results": []})
+    local_streams_total = _count_streams(local_payload)
 
     _log("\n" + "=" * 70)
     _log("RIEPILOGO SYNC")
     _log("=" * 70)
+
+    if local_streams_total == 0:
+        _log("! Nessuno stream rilevato nel ciclo corrente: salto l'aggiornamento remoto per non svuotare il JSON.")
+        _log("=" * 70)
+        return
 
     if local_cmp == remote_cmp:
         _log("✓ Nessuna differenza trovata. Repository aggiornato.")
